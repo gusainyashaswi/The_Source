@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.navbar{
+    height: 102px;
+    width: 100%;
+    background-color: black;
+    margin: 0px;
+}
+
+.logo{
+    height: 111px;
+    width: 391px;
+    margin: -9px 127px 0px -27px ;
+}
+
+.About{
+    height: 93px;
+    width: 180px;
+    margin: 4px -48px 5px 127px ;
+
+}
+
+.Support{
+    height: 93px;
+    width: 180px;
+    margin: 7px -38px 2px -48px;
+}
+
+.More{
+    height: 93px;
+    width: 180px;
+    margin: 4px 229px 5px -38px;
+}
+
+.Buy{
+    height: 56px;
+    width: 110px;
+    margin: 23px 0px 23px 229px;
+}
+
+.Search{
+    height: 67px;
+    width: 67px;
+    margin: 18px 0px 17px 0px;
+}
+
+.Profile{
+    height: 67px;
+    width: 67px;
+    margin: 18px 18px 17px 0px;
+}
+
+/* Landing Page Starts */
+
+.Landing-Page{
+    height: 904px;
+    width: 100%;
+    background-color: burlywood;
+    position: relative;
+    margin: 0px;
+}
+
+.Now{
+
+    height: 77px;
+    width: 472px;
+    top:560px;
+    right: 937px;
+    bottom: 267px;
+    left:31px ;
+    position: absolute;
+    color: white;
+}
+
+.Experience{
+    height: 70px;
+    width: 460px;
+    top: 637px;
+    right: 949px;
+    bottom: 197px;
+    left: 31px;
+    position: absolute;
+    margin-top: 0px;
+    color: white;
+}
+
+.logo2{
+    height: 103px;
+    width: 508px;
+    top: 707px;
+    right: 988px;
+    bottom: 94px;
+    left: -56px;
+    position: absolute;
+    margin-top: 0px;
+    background-color: green;
+}
+
+.Buynow{
+    height: 54px;
+    width: 140px;
+    border-radius: 40px;
+    top: 812px;
+    right: 1253px;
+    bottom:38px;
+    left: 47px;
+    position: absolute;
+}
+
+.Teaser{
+     height: 54px;
+    width: 140px;
+    border-radius: 40px;
+    top: 812px;
+    right: 1097px;
+    bottom:38px;
+    left: 203px;
+    position: absolute;
+
+}
+
+/* Hero Section Starts */
+
+.Hero-Section{
+    height: 992px;
+    width: 100%;
+    background-color: yellow;
+    position: relative;
+}
+
+.Hero{
+    height: 324px;
+    width: 310px;
+    background-color: white;
+    top: 116px;
+    right: 1020px;
+    bottom: 552px;
+    left: 110px;
+    position: absolute;
+}
+
+.Hero2{
+    height: 324px;
+    width: 310px;
+    background-color: white;
+    top: 526px;
+    right: 1020px;
+    bottom: 142px;
+    left: 110px;
+    position: absolute;
+}
+
+.logo3{
+    height: 88px;
+    width: 387px;
+    top: 116px;
+    right: 523px;
+    bottom: 788px;
+    left: 530px;
+    background-color: green;
+    position: absolute;
+}
+
+.Hero-Section h2{
+    height: 64px;
+    width: 598px;
+    top: 227px;
+    right: 242px;
+    bottom: 701px;
+    left: 600px;
+    position: absolute;
+    background-color: aqua;
+}
+
+.Hero-Section p{
+    height: 576px;
+    width: 720px;
+    top: 301px;
+    right: 105px;
+    bottom: 115px;
+    left: 615px;
+    position: absolute;
+    background-color: aqua;
+
+}
