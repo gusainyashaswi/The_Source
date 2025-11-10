@@ -3,10 +3,17 @@
     padding: 0px;
     box-sizing: border-box;
 }
-.navbar{
-    height: 102px;
-    width: 100%;
+body{
     background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.navbar{
+    background-color: blueviolet;
+    height: 102px;
+    width: 1440px;
     margin: 0px;
 }
 
@@ -57,7 +64,7 @@
 
 .Landing-Page{
     height: 904px;
-    width: 100%;
+    width: 1440px;
     background-color: burlywood;
     position: relative;
     margin: 0px;
@@ -125,8 +132,8 @@
 /* Hero Section Starts */
 
 .Hero-Section{
-    height: 992px;
-    width: 100%;
+    height: 904px;
+    width: 1440px;
     background-color: yellow;
     position: relative;
 }
@@ -184,5 +191,249 @@
     left: 615px;
     position: absolute;
     background-color: aqua;
-
 }
+
+/* The Source+ Page*/
+
+.Graphics{
+    height: 904px;
+    width: 1440px;
+    position: relative;
+    background-color: brown;
+}
+
+.Imageon3{
+    height: 620px;
+    width: 496px;
+    top: 150px;
+    right: 104px;
+    bottom: 134px;
+    left: 840px;
+    position: absolute;
+    background-color: white;
+}
+
+.blur{
+    height: 620px;
+    width: 252px;
+    top: 150px;
+    right: 103px;
+    bottom: 134px;
+    left: 1084px;
+    background-color: black;
+    position: absolute;
+    opacity: 60%;
+}
+
+.logo4{
+    height: 179px;
+    width: 297px;
+    top: 88px;
+    right: 1076px;
+    bottom: 637px;
+    left: 67px;
+    background-color: green;
+    position: absolute;
+}
+
+.Graphics h2{
+    height: 64px;
+    width: 317px;
+    top: 251px;
+    right: 1018px;
+    bottom: 589px;
+    left: 105px;
+    position: absolute;
+    background-color: aqua;
+}
+
+.Graphics p{
+    height: 576px;
+    width: 720px;
+    top: 325px;
+    right: 600px;
+    bottom: 3px;
+    left: 120px;
+    position: absolute;
+    background-color: aqua;
+}
+
+/* Map Page Starts */
+
+.Map{
+    height: 904px;
+    width: 1440px;
+    position: relative;
+    background-color:beige;
+}
+
+.Imageon4{
+    height: 534px;
+    width: 480px;
+    top: 144px;
+    right: 834px;
+    bottom: 224px;
+    left: 124px;
+    background-color: white;
+    position: absolute;
+}
+
+.Map h2{
+    height: 64px;
+    width: 584px;
+    top: 178px;
+    right:234px;
+    bottom: 660px;
+    left: 620px;
+    position: absolute;
+}
+
+.Map p{
+    height: 576px;
+    width: 700px;
+    top: 243px;
+    right: 84px;
+    bottom: 83px;
+    left: 653px;
+    position: absolute;
+}
+
+/* Buy Section Starts */
+
+.Buy-section{
+    height: 992px;
+    width: 1440px;
+    position: relative;
+    background-color:cadetblue;
+}
+
+.Buy-section h2{
+    height: 223px;
+    width: 223px;
+    top: 66px;
+    right: 1112px;
+    bottom: 862px;
+    left: 105px;
+    position: absolute;
+}
+
+.game1{
+    height: 800px;
+    width: 600px;
+    top: 144px;
+    right: 735.5px;
+    bottom: 48px;
+    left: 104.5px;
+    position: absolute;
+    background-color: white;
+}
+
+.game2{
+     width: 600px;
+    top: 144px;
+    right: 104.5px;
+    bottom: 48px;
+    left: 735.5px;
+    position: absolute;
+    background-color: white;
+}
+
+.logo5{
+    height: 88px;
+    width: 387px;
+    top:19px;
+    right: 251px;
+    bottom: 693px;
+    left: -38px;
+    position: absolute;
+    background-color: green;
+}
+
+.logo6{
+    height: 179px;
+    width: 297px;
+    top: -27px;
+    right: 303px;
+    bottom: 648px;
+    left: 0px;
+    background-color: green;
+}
+
+.ps5{
+    height: 50px;
+    width: 91px;
+    top: 620px;
+    right: 380.5px;
+    bottom: 130px;
+    left: 128.5px;
+    background-color: gray;
+    position: absolute;
+}
+
+.xbox{
+    height: 26px;
+    width: 197px;
+    top: 632px;
+    right: 183.5px;
+    bottom: 142px;
+    left: 219.5px;
+    background-color: gray;
+    position: absolute;
+}
+
+.pc{
+    height: 34px;
+    width: 54px;
+    top: 628px;
+    right: 128.5px;
+    bottom: 138px;
+    left: 417.5px;
+    background-color: gray;
+    position: absolute;
+}
+
+.Platform{
+    height: 95px;
+    width: 450px;
+    top: 670px;
+    right: 77.5px;
+    bottom: 35px;
+    left: 72.5px;
+    background-color: gray;
+    position: absolute;
+}
+
+/* Footer Page Starts */
+
+.Footer{
+    height: 518px;
+    width: 1440px;
+    position: relative;
+    background-color: black;
+}
+
+.logo7{
+    height: 111px;
+    width: 391px;
+    top: 58px;
+    right: 526px;
+    bottom: 349px;
+    left: 523px;
+    position: absolute;
+    background-color: green;
+}
+
+.strong{
+    height: 36px;
+    width: 1440px;
+    top: 162px;
+    right: 2px;
+    bottom: 320px;
+    left: 2px;
+    position: absolute;
+    color: white;
+    background-color: aqua;
+}
+
+
+
