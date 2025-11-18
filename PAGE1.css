@@ -11,7 +11,7 @@ body{
     align-items: center;
 }
 .navbar{
-    background-color: blueviolet;
+    background-color: black;
     height: 102px;
     width: 1440px;
     margin: 0px;
@@ -65,7 +65,9 @@ body{
 .Landing-Page{
     height: 904px;
     width: 1440px;
-    background-color: burlywood;
+    background-image: url("cap images/openart-1865d920176d4ea4a795f5c59969abc4_raw.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     position: relative;
     margin: 0px;
 }
@@ -134,14 +136,27 @@ body{
 .Hero-Section{
     height: 904px;
     width: 1440px;
-    background-color: yellow;
     position: relative;
+}
+
+.Hero-Section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("cap images/_ (1).jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+    z-index: -1; 
 }
 
 .Hero{
     height: 324px;
     width: 310px;
-    background-color: white;
+    background-image: url("cap images/Gemini_Generated_Image_8weg0j8weg0j8weg-removebg-preview.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 100%;
     top: 116px;
     right: 1020px;
     bottom: 552px;
@@ -152,7 +167,9 @@ body{
 .Hero2{
     height: 324px;
     width: 310px;
-    background-color: white;
+    background-image: url("cap images/Gemini_Generated_Image_8h2hy88h2hy88h2h-removebg-preview.png");
+    background-size: cover;
+    background-repeat: no-repeat;
     top: 526px;
     right: 1020px;
     bottom: 142px;
@@ -167,7 +184,9 @@ body{
     right: 523px;
     bottom: 788px;
     left: 530px;
-    background-color: green;
+    background-image: url("cap images/Gemini_Generated_Image_q2gkv3q2gkv3q2gk-removebg-preview.png");
+    background-size: cover;
+    background-repeat: no-repeat;
     position: absolute;
 }
 
@@ -179,7 +198,8 @@ body{
     bottom: 701px;
     left: 600px;
     position: absolute;
-    background-color: aqua;
+    color: white;
+    font-size: 48px;
 }
 
 .Hero-Section p{
@@ -190,7 +210,8 @@ body{
     bottom: 115px;
     left: 615px;
     position: absolute;
-    background-color: aqua;
+    color: white;
+    font-size: xx-large;
 }
 
 /* The Source+ Page*/
@@ -200,6 +221,17 @@ body{
     width: 1440px;
     position: relative;
     background-color: brown;
+}
+
+.Graphics::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("cap images/openart-1865d920176d4ea4a795f5c59969abc4_raw.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+    z-index: -1; 
 }
 
 .Imageon3{
@@ -434,6 +466,3 @@ body{
     color: white;
     background-color: aqua;
 }
-
-
-
