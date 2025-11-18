@@ -220,14 +220,13 @@ body{
     height: 904px;
     width: 1440px;
     position: relative;
-    background-color: brown;
 }
 
 .Graphics::before{
     content: "";
     position: absolute;
     inset: 0;
-    background-image: url("cap images/openart-1865d920176d4ea4a795f5c59969abc4_raw.jpg");
+    background-image: url("cap images/1354199.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 0.2;
@@ -242,7 +241,10 @@ body{
     bottom: 134px;
     left: 840px;
     position: absolute;
-    background-color: white;
+    background-image: url("cap images/d55680214e05ab4b4abd2a97836cc4e4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 30px;
 }
 
 .blur{
@@ -276,7 +278,8 @@ body{
     bottom: 589px;
     left: 105px;
     position: absolute;
-    background-color: aqua;
+    color: white;
+    font-size: 48px;
 }
 
 .Graphics p{
@@ -287,7 +290,8 @@ body{
     bottom: 3px;
     left: 120px;
     position: absolute;
-    background-color: aqua;
+    color: white;
+    font-size: xx-large;
 }
 
 /* Map Page Starts */
@@ -296,7 +300,17 @@ body{
     height: 904px;
     width: 1440px;
     position: relative;
-    background-color:beige;
+}
+
+.Map::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("cap images/image.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+    z-index: -1; 
 }
 
 .Imageon4{
@@ -306,8 +320,11 @@ body{
     right: 834px;
     bottom: 224px;
     left: 124px;
-    background-color: white;
+    background-image: url("cap images/image copy.png");
     position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
 }
 
 .Map h2{
@@ -318,6 +335,8 @@ body{
     bottom: 660px;
     left: 620px;
     position: absolute;
+    color: white;
+    font-size: 48px;
 }
 
 .Map p{
@@ -328,6 +347,8 @@ body{
     bottom: 83px;
     left: 653px;
     position: absolute;
+    color: white;
+    font-size: xx-large;
 }
 
 /* Buy Section Starts */
@@ -336,7 +357,17 @@ body{
     height: 992px;
     width: 1440px;
     position: relative;
-    background-color:cadetblue;
+}
+
+.Buy-section::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("cap images/7632d32062dd523d9d7efedbc84f06f9.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+    z-index: -1;
 }
 
 .Buy-section h2{
@@ -357,7 +388,10 @@ body{
     bottom: 48px;
     left: 104.5px;
     position: absolute;
-    background-color: white;
+    background-image: url("cap images/74691a13a288a5fa5d0385814f91af5d.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50px;
 }
 
 .game2{
@@ -367,7 +401,10 @@ body{
     bottom: 48px;
     left: 735.5px;
     position: absolute;
-    background-color: white;
+    background-image: url("cap images/009cfbc7b27dc9e282a54d745e935bc6.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50px;
 }
 
 .logo5{
