@@ -1,0 +1,431 @@
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.navbar{
+    height: 102px;
+    width: 1440px;
+    background-color: black;
+    margin: 0px;
+    position: relative;
+}
+
+.logo{
+    height: 111px;
+    width: 391px;
+    top:-12px;
+    right: 1702px;
+    bottom: 3px;
+    left: -23px;
+    position: absolute;
+    background-image: url("cap images/Gemini_Generated_Image_j2ln6qj2ln6qj2ln-removebg-preview.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    border: 0px;
+}
+
+.About{
+    height: 93px;
+    width: 180px;
+    top: 1px;
+    right: 765px;
+    bottom: 8px;
+    left: 495px;
+    position: absolute;
+}
+
+.Support{
+    height: 93px;
+    width: 180px;
+    top: 4px;
+    right: 633px;
+    bottom: 5px;
+    left: 627px;
+    position: absolute;
+}
+
+.More{
+    height: 93px;
+    width: 180px;
+    top: 1px;
+    right: 491px;
+    bottom: 8px;
+    left: 769px;
+    position: absolute;
+}
+
+.Buy{
+    height: 56px;
+    width: 110px;
+    top: 20px;
+    right: 152px;
+    bottom: 26px;
+    left: 1178px;
+    position: absolute;
+    border-radius: 50px;
+    background-image: url("cap images/Gemini_Generated_Image_oh280yoh280yoh28-removebg-preview.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    border: 1px solid gold;
+}
+
+.Search{
+    height: 67px;
+    width: 67px;
+    top: 15px;
+    right: 85px;
+    bottom: 20px;
+    left: 1288px;
+    position: absolute;
+    background-image: url("cap images/Gemini_Generated_Image_vlchwjvlchwjvlch-removebg-preview.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    border: 0px;
+}
+
+.Profile{
+    height: 67px;
+    width: 67px;
+    top: 15px;
+    right: 18px;
+    bottom: 20px;
+    left: 1355px;
+    position: absolute;
+    background-image: url("cap images/Gemini_Generated_Image_mceivsmceivsmcei-removebg-preview.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    border: 0px;
+}
+
+#search-box{
+    height: 85px;
+    width: 458px;
+    top: 232px;
+    right: 497px;
+    bottom: 192px;
+    left: 485px;
+    position: absolute;
+    border-radius: 50px;
+    border: none;
+    padding: 20px;
+    background-color: black;
+    opacity: 0.5;
+    color: black;
+}
+
+.sec1{
+    height: 743px;
+    width: 1440px;
+    background-image: url("cap images/1a6cfad4905305f734adcc69a7313d26.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.sec1 h2{
+    height: 259px;
+    width: 629px;
+    color: white;
+    font-size: 96px;
+    top: 26px;
+    left: 22px;
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0.8;
+}
+
+.sec2{
+    height: 900px;
+    width: 1440px;
+    position: relative;
+}
+
+.sec2::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("cap images/d0c78e0a2afe5ef4c8c9af0c59337c23.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+    z-index: -1; 
+}
+
+.sec2 h2{
+    height: 100px;
+    width: 1074px;
+    font-size: 96px;
+    top: 50px;
+    left: 17px;
+    position: absolute;
+    color: white;
+    font-size: 96px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sec2 p{
+    height: 81px;
+    width: 1260px;
+    top: 200px;
+    left: 80px;
+    color: white;
+    font-size: 35px;
+    position: absolute;
+}
+
+.sec3{
+    height: 900px;
+    width: 1400px;
+    position: relative;
+}
+
+.sec3 h1{
+    height: 259px;
+    width: 906px;
+    font-size: 96px;
+    color: white;
+    top: 50px;
+    left: 276px;
+    position: absolute;
+}
+
+.a{
+    height: 60px;
+    width: 1124px;
+    top: 229px;
+    left: 158px;
+    position: absolute;
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    font-weight: 100;
+}
+
+.b{
+    height: 60px;
+    width: 1124px;
+    top: 271px;
+    left: 158px;
+    position: absolute;
+    color: yellowgreen;
+    font-size: 32px;
+    text-align: center;
+}
+
+.c{
+    height: 60px;
+    width: 1124px;
+    top: 354px;
+    left: 158px;
+    position: absolute;
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    font-weight: 100;
+}
+
+.d{
+    height: 60px;
+    width: 1124px;
+    top: 402px;
+    left: 158px;
+    position: absolute;
+    color: yellowgreen;
+    font-size: 32px;
+    text-align: center;
+}
+
+.e{
+    height: 60px;
+    width: 1124px;
+    top: 473px;
+    left: 158px;
+    position: absolute;
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    font-weight: 100;
+}
+
+.f{
+    height: 60px;
+    width: 1124px;
+    top: 512px;
+    left: 158px;
+    position: absolute;
+    color: yellowgreen;
+    font-size: 32px;
+    text-align: center;
+}
+
+.g{
+    height: 60px;
+    width: 1124px;
+    top: 592px;
+    left: 158px;
+    position: absolute;
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    font-weight: 100;
+}
+
+.h{
+    height: 60px;
+    width: 1124px;
+    top: 640px;
+    left: 158px;
+    position: absolute;
+    color: yellowgreen;
+    font-size: 32px;
+    text-align: center;
+}
+
+.i{
+    height: 60px;
+    width: 1124px;
+    top: 711px;
+    left: 158px;
+    position: absolute;
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    font-weight: 100;
+}
+
+.j{
+    height: 60px;
+    width: 1124px;
+    top: 759px;
+    left: 158px;
+    position: absolute;
+    color: yellowgreen;
+    font-size: 32px;
+    text-align: center;
+}
+
+.Footer{
+    height: 388px;
+    width: 1440px;
+    position: relative;
+    background-color: black;
+}
+
+.logo7{
+    height: 111px;
+    width: 401px;
+    top: 48px;
+    right: 515px;
+    bottom: 229px;      
+    left: 524px;
+    position: absolute;
+    background-color: black;
+    background-image: url("cap images/Gemini_Generated_Image_j2ln6qj2ln6qj2ln-removebg-preview.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.strong{
+    height: 36px;
+    width: 1440px;
+    top: 159px;     
+    right: 0px;
+    bottom: 193px;
+    left: 0px;
+    font-size: 24px;
+    position: absolute;
+    text-align: center;
+    color: white;
+}
+
+.sign{
+    height: 72px;
+    width: 1077px;
+    top: 200px;
+    right: 182px;
+    bottom: 116px;
+    left: 181px;
+    font-size: 24px;
+    position: absolute;
+    text-align: center;
+    color: white;
+}
+
+.facebook{
+    height: 40px;
+    width: 40px;
+    top: 293px;
+    right: 772px;
+    bottom: 55px;
+    left: 628px;
+    position: absolute;
+    background-image: url("cap images/f5a0bum23hqqkb7qk2q1h1lpje.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    border: none;
+}
+
+.linkedin{
+    height: 40px;
+    width: 40px;
+    top: 293px;
+    right: 724px;
+    bottom: 55px;
+    left: 676px;
+    position: absolute;
+    background-image: url("cap images/3kft339tguuarggagqlqho6dbh.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    border: none;
+}
+.twitter{
+    height: 40px;
+    width: 40px;
+    top: 293px;
+    right: 676px;
+    bottom: 55px;
+    left: 724px;
+    position: absolute;
+    background-image: url("cap images/Twitter-X-White-Logo-PNG.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    border: none;
+}
+.instagram{
+    height: 40px;
+    width: 40px;
+    top: 293px;
+    right: 628px;
+    bottom: 55px;
+    left: 772px;
+    position: absolute;
+    background-image: url("cap images/image copy 7.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    border: none;
+}
