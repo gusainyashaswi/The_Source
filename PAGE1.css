@@ -11,53 +11,122 @@ body{
     align-items: center;
 }
 .navbar{
-    background-color: black;
     height: 102px;
     width: 1440px;
+    background-color: black;
     margin: 0px;
+    position: relative;
 }
 
 .logo{
     height: 111px;
     width: 391px;
-    margin: -9px 127px 0px -27px ;
+    top:-12px;
+    right: 1702px;
+    bottom: 3px;
+    left: -23px;
+    position: absolute;
+    background-image: url("cap images/Gemini_Generated_Image_j2ln6qj2ln6qj2ln-removebg-preview.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    border: 0px;
 }
 
 .About{
     height: 93px;
     width: 180px;
-    margin: 4px -48px 5px 127px ;
-
+    top: 1px;
+    right: 765px;
+    bottom: 8px;
+    left: 495px;
+    position: absolute;
 }
 
 .Support{
     height: 93px;
     width: 180px;
-    margin: 7px -38px 2px -48px;
+    top: 4px;
+    right: 633px;
+    bottom: 5px;
+    left: 627px;
+    position: absolute;
 }
 
 .More{
     height: 93px;
     width: 180px;
-    margin: 4px 229px 5px -38px;
+    top: 1px;
+    right: 491px;
+    bottom: 8px;
+    left: 769px;
+    position: absolute;
 }
 
 .Buy{
     height: 56px;
     width: 110px;
-    margin: 23px 0px 23px 229px;
+    top: 20px;
+    right: 152px;
+    bottom: 26px;
+    left: 1178px;
+    position: absolute;
+    border-radius: 50px;
+    background-image: url("cap images/Gemini_Generated_Image_oh280yoh280yoh28-removebg-preview.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    border: 1px solid gold;
 }
 
 .Search{
     height: 67px;
     width: 67px;
-    margin: 18px 0px 17px 0px;
+    top: 15px;
+    right: 85px;
+    bottom: 20px;
+    left: 1288px;
+    position: absolute;
+    background-image: url("cap images/Gemini_Generated_Image_vlchwjvlchwjvlch-removebg-preview.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    border: 0px;
 }
 
 .Profile{
     height: 67px;
     width: 67px;
-    margin: 18px 18px 17px 0px;
+    top: 15px;
+    right: 18px;
+    bottom: 20px;
+    left: 1355px;
+    position: absolute;
+    background-image: url("cap images/Gemini_Generated_Image_mceivsmceivsmcei-removebg-preview.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    border: 0px;
+}
+
+#search-box{
+    height: 85px;
+    width: 458px;
+    top: 232px;
+    right: 497px;
+    bottom: 192px;
+    left: 485px;
+    position: absolute;
+    border-radius: 50px;
+    border: none;
+    padding: 20px;
+    background-color: black;
+    opacity: 0.5;
+    color: black;
 }
 
 /* Landing Page Starts */
@@ -70,6 +139,7 @@ body{
     background-repeat: no-repeat;
     position: relative;
     margin: 0px;
+    border-radius: 40px;
 }
 
 .Now{
@@ -241,7 +311,7 @@ body{
     bottom: 134px;
     left: 840px;
     position: absolute;
-    background-image: url("cap images/d55680214e05ab4b4abd2a97836cc4e4.jpg");
+    background-image: url("cap images/image copy 5.png");
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 30px;
@@ -266,7 +336,10 @@ body{
     right: 1076px;
     bottom: 637px;
     left: 67px;
-    background-color: green;
+    background-image: url("cap images/Gemini_Generated_Image_q2gkv3q2gkv3q2gk-removebg-preview.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     position: absolute;
 }
 
@@ -378,6 +451,8 @@ body{
     bottom: 862px;
     left: 105px;
     position: absolute;
+    color: white;
+    font-size: 48px;
 }
 
 .game1{
@@ -408,14 +483,19 @@ body{
 }
 
 .logo5{
-    height: 88px;
-    width: 387px;
-    top:19px;
-    right: 251px;
-    bottom: 693px;
-    left: -38px;
+    height: 179px;
+    width: 297px;
+    top: -27px;
+    right: 303px;
+    bottom: 648px;
+    left: 0px;
     position: absolute;
-    background-color: green;
+    background-image: url("cap images/Gemini_Generated_Image_8p8z918p8z918p8z-removebg-preview.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 .logo6{
@@ -425,7 +505,12 @@ body{
     right: 303px;
     bottom: 648px;
     left: 0px;
-    background-color: green;
+    background-image: url("cap images/Gemini_Generated_Image_q2gkv3q2gkv3q2gk-removebg-preview.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 .ps5{
@@ -435,7 +520,10 @@ body{
     right: 380.5px;
     bottom: 130px;
     left: 128.5px;
-    background-color: gray;
+    background-image: url("cap images/PS5-Logo-PNG-Free-Image.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     position: absolute;
 }
 
@@ -446,8 +534,12 @@ body{
     right: 183.5px;
     bottom: 142px;
     left: 219.5px;
-    background-color: gray;
+    background-image: url("cap images/Screenshot_2025-11-08_at_21.05.50-removebg-preview.png");
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
     position: absolute;
+    
 }
 
 .pc{
@@ -457,7 +549,10 @@ body{
     right: 128.5px;
     bottom: 138px;
     left: 417.5px;
-    background-color: gray;
+    background-image: url("cap images/Screenshot_2025-11-08_at_21.15.17-removebg-preview.png");
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
     position: absolute;
 }
 
@@ -468,14 +563,18 @@ body{
     right: 77.5px;
     bottom: 35px;
     left: 72.5px;
-    background-color: gray;
+    background-color: aliceblue;
     position: absolute;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    font-size: 32px;
+    color: white;
 }
 
 /* Footer Page Starts */
 
 .Footer{
-    height: 518px;
+    height: 388px;
     width: 1440px;
     position: relative;
     background-color: black;
@@ -483,23 +582,103 @@ body{
 
 .logo7{
     height: 111px;
-    width: 391px;
-    top: 58px;
-    right: 526px;
-    bottom: 349px;
-    left: 523px;
+    width: 401px;
+    top: 48px;
+    right: 515px;
+    bottom: 229px;      
+    left: 524px;
     position: absolute;
-    background-color: green;
+    background-color: black;
+    background-image: url("cap images/Gemini_Generated_Image_j2ln6qj2ln6qj2ln-removebg-preview.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .strong{
     height: 36px;
     width: 1440px;
-    top: 162px;
-    right: 2px;
-    bottom: 320px;
-    left: 2px;
+    top: 159px;     
+    right: 0px;
+    bottom: 193px;
+    left: 0px;
+    font-size: 24px;
     position: absolute;
+    text-align: center;
     color: white;
-    background-color: aqua;
+}
+
+.sign{
+    height: 72px;
+    width: 1077px;
+    top: 200px;
+    right: 182px;
+    bottom: 116px;
+    left: 181px;
+    font-size: 24px;
+    position: absolute;
+    text-align: center;
+    color: white;
+}
+
+.facebook{
+    height: 40px;
+    width: 40px;
+    top: 293px;
+    right: 772px;
+    bottom: 55px;
+    left: 628px;
+    position: absolute;
+    background-image: url("cap images/f5a0bum23hqqkb7qk2q1h1lpje.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    border: none;
+}
+
+.linkedin{
+    height: 40px;
+    width: 40px;
+    top: 293px;
+    right: 724px;
+    bottom: 55px;
+    left: 676px;
+    position: absolute;
+    background-image: url("cap images/3kft339tguuarggagqlqho6dbh.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    border: none;
+}
+.twitter{
+    height: 40px;
+    width: 40px;
+    top: 293px;
+    right: 676px;
+    bottom: 55px;
+    left: 724px;
+    position: absolute;
+    background-image: url("cap images/Twitter-X-White-Logo-PNG.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    border: none;
+}
+.instagram{
+    height: 40px;
+    width: 40px;
+    top: 293px;
+    right: 628px;
+    bottom: 55px;
+    left: 772px;
+    position: absolute;
+    background-image: url("cap images/image copy 7.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    border: none;
 }
