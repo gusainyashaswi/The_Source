@@ -42,6 +42,13 @@ body{
     bottom: 8px;
     left: 495px;
     position: absolute;
+    background-image: url("cap images/Gemini_Generated_Image_ah5ysaah5ysaah5y-removebg-preview.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    border-radius: 50px;
+    border: none;
 }
 
 .Support{
@@ -52,6 +59,14 @@ body{
     bottom: 5px;
     left: 627px;
     position: absolute;
+    background-image: url("cap images/Gemini_Generated_Image_rwcdjyrwcdjyrwcd-removebg-preview.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    border-radius: 50px;
+    border: none;
+    z-index: 1;
 }
 
 .More{
@@ -62,6 +77,13 @@ body{
     bottom: 8px;
     left: 769px;
     position: absolute;
+    background-image: url("cap images/Gemini_Generated_Image_52whpf52whpf52wh-removebg-preview.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    border-radius: 50px;
+    border: none;
 }
 
 .Buy{
@@ -134,7 +156,7 @@ body{
 .Landing-Page{
     height: 904px;
     width: 1440px;
-    background-image: url("cap images/openart-1865d920176d4ea4a795f5c59969abc4_raw.jpg");
+    background-image: url("cap images/image.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -143,39 +165,45 @@ body{
 }
 
 .Now{
-
     height: 77px;
-    width: 472px;
+    width: 552px;
     top:560px;
     right: 937px;
     bottom: 267px;
     left:31px ;
+    font-size: 34px;
     position: absolute;
     color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 .Experience{
     height: 70px;
     width: 460px;
-    top: 637px;
+    top: 647px;
     right: 949px;
     bottom: 197px;
     left: 31px;
     position: absolute;
     margin-top: 0px;
+    font-size: 20px;
     color: white;
+    font-family: ch;
 }
 
 .logo2{
     height: 103px;
     width: 508px;
-    top: 707px;
+    top: 690px;
     right: 988px;
     bottom: 94px;
     left: -56px;
     position: absolute;
     margin-top: 0px;
-    background-color: green;
+    background-image: url("cap images/Gemini_Generated_Image_j2ln6qj2ln6qj2ln-removebg-preview.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .Buynow{
@@ -187,6 +215,8 @@ body{
     bottom:38px;
     left: 47px;
     position: absolute;
+    opacity: 0.7;
+    border: none;
 }
 
 .Teaser{
@@ -198,6 +228,8 @@ body{
     bottom:38px;
     left: 203px;
     position: absolute;
+    opacity: 0.7;
+    border: none;
 
 }
 
@@ -226,6 +258,7 @@ body{
     background-image: url("cap images/Gemini_Generated_Image_8weg0j8weg0j8weg-removebg-preview.png");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     opacity: 100%;
     top: 116px;
     right: 1020px;
@@ -254,9 +287,10 @@ body{
     right: 523px;
     bottom: 788px;
     left: 530px;
-    background-image: url("cap images/Gemini_Generated_Image_q2gkv3q2gkv3q2gk-removebg-preview.png");
+    background-image: url("cap images/Gemini_Generated_Image_8p8z918p8z918p8z-removebg-preview.png");
     background-size: cover;
     background-repeat: no-repeat;
+
     position: absolute;
 }
 
@@ -569,6 +603,7 @@ body{
     border-radius: 50px;
     font-size: 32px;
     color: white;
+    border: none;
 }
 
 /* Footer Page Starts */
@@ -681,4 +716,8 @@ body{
     background-position: center;
     background-color: black;
     border: none;
+}
+
+button:hover{
+    cursor: pointer;
 }

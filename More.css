@@ -44,6 +44,13 @@ body{
     bottom: 8px;
     left: 495px;
     position: absolute;
+    background-image: url("cap images/Gemini_Generated_Image_ah5ysaah5ysaah5y-removebg-preview.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    border-radius: 50px;
+    border: none;
 }
 
 .Support{
@@ -54,6 +61,14 @@ body{
     bottom: 5px;
     left: 627px;
     position: absolute;
+    background-image: url("cap images/Gemini_Generated_Image_rwcdjyrwcdjyrwcd-removebg-preview.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    border-radius: 50px;
+    border: none;
+    z-index: 1;
 }
 
 .More{
@@ -64,6 +79,13 @@ body{
     bottom: 8px;
     left: 769px;
     position: absolute;
+    background-image: url("cap images/Gemini_Generated_Image_52whpf52whpf52wh-removebg-preview.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    border-radius: 50px;
+    border: none;
 }
 
 .Buy{
@@ -122,6 +144,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+    border-radius: 30px;
 }
 
 .one{
@@ -325,4 +348,7 @@ body{
     border: none;
 }
 
+button:hover{
+    cursor: pointer;
+}
 
