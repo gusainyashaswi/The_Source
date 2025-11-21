@@ -177,6 +177,10 @@ body{
     color: black;
 }
 
+#search-box:hover{
+    background-color: white;
+}
+
 .sec2{
     height: 1176px;
     width: 1440px;
@@ -211,12 +215,15 @@ body{
     height: 431px;
     width: 410px;
     border-radius: 40px;
-     background-color: #222222;
+    background-color: #222222;
     position: absolute;
     top: 185px;
     right: 952px;
     bottom: 560px;
     left: 75px;
+}
+.one:hover,.two:hover,.three:hover,.four:hover,.five:hover,.six:hover{
+    background-color: #3c3b3b;
 }
 
 .two{
@@ -310,6 +317,11 @@ body{
     background-color: gold;
     font-size: large;
     font-weight: bold;
+}
+
+.request:hover{
+    background-color: white;
+    color: gold;
 }
 
 .Footer{

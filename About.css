@@ -210,7 +210,9 @@ body{
     color: white;
     font-size: 35px;
     position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
 
 .sec3{
     height: 900px;
@@ -240,6 +242,10 @@ body{
     font-weight: 100;
 }
 
+.a:hover{
+    font-size: 35px;
+}
+
 .b{
     height: 60px;
     width: 1124px;
@@ -249,6 +255,10 @@ body{
     color: yellowgreen;
     font-size: 32px;
     text-align: center;
+}
+
+.b:hover{
+    font-size: 37px;
 }
 
 .c{
@@ -263,6 +273,10 @@ body{
     font-weight: 100;
 }
 
+.c:hover{
+    font-size: 35px;
+}
+
 .d{
     height: 60px;
     width: 1124px;
@@ -272,6 +286,10 @@ body{
     color: yellowgreen;
     font-size: 32px;
     text-align: center;
+}
+
+.d:hover{
+   font-size: 37px; 
 }
 
 .e{
@@ -286,6 +304,10 @@ body{
     font-weight: 100;
 }
 
+.e:hover{
+    font-size: 35px;
+}
+
 .f{
     height: 60px;
     width: 1124px;
@@ -295,6 +317,10 @@ body{
     color: yellowgreen;
     font-size: 32px;
     text-align: center;
+}
+
+.f:hover{
+    font-size: 37px;
 }
 
 .g{
@@ -309,6 +335,10 @@ body{
     font-weight: 100;
 }
 
+.g:hover{
+    font-size: 35px;
+}
+
 .h{
     height: 60px;
     width: 1124px;
@@ -318,6 +348,10 @@ body{
     color: yellowgreen;
     font-size: 32px;
     text-align: center;
+}
+
+.h:hover{
+    font-size: 37px;
 }
 
 .i{
@@ -332,6 +366,10 @@ body{
     font-weight: 100;
 }
 
+.i:hover{
+    font-size: 35px;
+}
+
 .j{
     height: 60px;
     width: 1124px;
@@ -341,6 +379,10 @@ body{
     color: yellowgreen;
     font-size: 32px;
     text-align: center;
+}
+
+.j:hover{
+    font-size: 37px;
 }
 
 .Footer{
@@ -456,3 +498,4 @@ body{
 button:hover{
     cursor: pointer;
 }
+
