@@ -10,92 +10,118 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* Changed: Made margins responsive using percentage and max-width */
+    margin-left: 5%;
+    margin-right: 5%;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+/* ==================== NAVBAR - Made Fully Responsive ==================== */
 .navbar{
     height: 102px;
-    width: 1440px;
+    width: 100%;
     background-color: black;
-    margin: 0px;
+    /* Removed: Fixed margin-left */
     position: relative;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    /* padding: 0px 2%; */
+    flex-wrap: wrap;
+    /* Added: Prevent overflow */
+    overflow: hidden;
 }
 
 .logo{
-    height: 111px;
-    width: 391px;
-    top:-12px;
-    right: 1702px;
-    bottom: 3px;
-    left: -23px;
-    position: absolute;
+    /* Changed: Made dimensions responsive */
+    height: 100px;
+    width: clamp(391px, 25vw, 391px);
+    width: 300px;
+    position: relative;
+    /* Removed: Fixed positioning values */
     background-image: url("cap images/Gemini_Generated_Image_j2ln6qj2ln6qj2ln-removebg-preview.png");
+
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-color: black;
+    border: 0px;
+    flex-shrink: 0;
+
+}
+
+.m{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: -100px;
+}
+
+.d{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: -100px; */
+    margin-right: 50px;
+
+}
+
+/* Changed: Navigation buttons to use relative positioning and flexbox */
+.navbar a:nth-child(2),
+.navbar a:nth-child(3),
+.navbar a:nth-child(4) {
+    display: flex;
+}
+
+.About,
+.Support,
+.More{
+    /* Changed: Made responsive with max dimensions */
+    height: 60px;
+    width: 150px;
+    /* width: clamp(100px, 12vw, 180px); */
+    position: relative;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     background-color: black;
-    border: 0px;
+    border-radius: 50px;
+    border: none;
+    flex-shrink: 0;
+    /* margin: 10px; */
 }
 
 .About{
-    height: 93px;
-    width: 180px;
-    top: 1px;
-    right: 765px;
-    bottom: 8px;
-    left: 495px;
-    position: absolute;
     background-image: url("cap images/Gemini_Generated_Image_ah5ysaah5ysaah5y-removebg-preview.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: black;
-    border-radius: 50px;
-    border: none;
+    padding: 0px;
+    /* margin-right: 10px; */
 }
 
 .Support{
-    height: 93px;
-    width: 180px;
-    top: 4px;
-    right: 633px;
-    bottom: 5px;
-    left: 627px;
-    position: absolute;
     background-image: url("cap images/Gemini_Generated_Image_rwcdjyrwcdjyrwcd-removebg-preview.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: black;
-    border-radius: 50px;
-    border: none;
     z-index: 1;
+    /* margin-left: 10px;
+    margin-right: 10px; */
 }
 
 .More{
-    height: 93px;
-    width: 180px;
-    top: 1px;
-    right: 491px;
-    bottom: 8px;
-    left: 769px;
-    position: absolute;
     background-image: url("cap images/Gemini_Generated_Image_52whpf52whpf52wh-removebg-preview.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: black;
-    border-radius: 50px;
-    border: none;
 }
 
 .Buy{
-    height: 56px;
-    width: 110px;
-    top: 20px;
-    right: 152px;
-    bottom: 26px;
-    left: 1178px;
-    position: absolute;
+    height: 50px;
+    width: clamp(80px, 8vw, 110px);
     border-radius: 50px;
     background-image: url("cap images/Gemini_Generated_Image_oh280yoh280yoh28-removebg-preview.png");
     background-size: cover;
@@ -103,157 +129,188 @@ body{
     background-position: center;
     background-color: black;
     border: 1px solid gold;
+    flex-shrink: 0;
 }
 
 .Search{
-    height: 67px;
-    width: 67px;
-    top: 15px;
-    right: 85px;
-    bottom: 20px;
-    left: 1288px;
-    position: absolute;
+    height: 50px;
+    width: 50px;
     background-image: url("cap images/Gemini_Generated_Image_vlchwjvlchwjvlch-removebg-preview.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-color: black;
     border: 0px;
+    flex-shrink: 0;
 }
 
 .Profile{
-    height: 67px;
-    width: 67px;
-    top: 15px;
-    right: 18px;
-    bottom: 20px;
-    left: 1355px;
-    position: absolute;
+    height: 50px;
+    width: 50px;
     background-image: url("cap images/Gemini_Generated_Image_mceivsmceivsmcei-removebg-preview.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-color: black;
     border: 0px;
+    flex-shrink: 0;
 }
 
+#search-box{
+    /* Changed: Made responsive */
+    height: 85px;
+    width: min(458px, 90%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50px;
+    border: none;
+    padding: 20px;
+    background-color: black;
+    opacity: 0.5;
+    color: black;
+}
+
+/* ==================== SECTION 1 - Updates Banner ==================== */
 .sec1{
-    height: 807px;
-    width: 1440px;
+    /* Changed: Made section responsive with flexible height */
+    min-height: 600px;
+    height: clamp(600px, 80vh, 807px);
+    width: 100%; /* Changed: From fixed 1440px to 100% */
     background-image: url("cap images/151fe1c93b8c2c4789ce4f9a5d3df53b.jpg");    
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     position: relative;
     border-radius: 30px;
+    /* Changed: Added flexbox for better content arrangement */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px 20px;
+    margin-bottom: 20px;
+}
+
+/* Changed: Made overlay bars responsive */
+.one,
+.two,
+.three{
+    /* Changed: Made bars span full width responsively */
+    height: clamp(80px, 10vh, 104px);
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    opacity: 0.7;
+    /* Added: Smooth transition for better UX */
+    transition: opacity 0.3s ease;
 }
 
 .one{
-    height: 104px;
-    width: 1440px;
-    background-color: black;
-    top: 90px;
-    left:0px;
-    position: absolute;
-    opacity: 0.7;
+    /* Changed: Position as percentage of container height */
+    top: 11%;
 }
 
 .two{
-    height: 104px;
-    width: 1440px;
-    background-color: black;
-    top: 324px;
-    left:0px;
-    position: absolute;
-    opacity: 0.7;
+    /* Changed: Position as percentage of container height */
+    top: 40%;
 }
 
 .three{
-    height: 104px;
-    width: 1440px;
-    background-color: black;
-    top: 573px;
-    left:0px;
+    /* Changed: Position as percentage of container height */
+    top: 71%;
+}
+
+.one:hover,
+.two:hover,
+.three:hover{
+    opacity: 0.85; /* Added: Subtle hover effect */
+}
+
+/* Changed: Made text headings responsive and properly positioned */
+.a,
+.b,
+.c{
+    /* Changed: Responsive font sizing with clamp() */
+    font-size: clamp(48px, 8vw, 96px);
+    opacity: 0.9; /* Changed: Slightly increased for better visibility */
+    color: #ffc0e4;
     position: absolute;
-    opacity: 0.7;
+    left: 50%;
+    transform: translateX(-50%); /* Changed: Center text horizontally */
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+    line-height: 1.2;
+    /* Added: Text shadow for better readability */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
 
 .a{
-    height: 248px;
-    width: 629px;
-    top: 88px;
-    left: 399px;
-    position: absolute;
-    font-size: 96px;
-    opacity: 0.7;
-    color: #ffc0e4;
+    /* Changed: Position relative to overlay bar */
+    top: 11%;
 }
 
 .b{
-    height: 248px;
-    width: 713px;
-    top: 322px;
-    left: 399px;
-    position: absolute;
-    font-size: 96px;
-    opacity: 0.7;
-    color: #ffc0e4;
-
+    /* Changed: Position relative to overlay bar */
+    top: 40%;
 }
 
 .c{
-    height: 248px;
-    width: 599px;
-    top: 571px;
-    left: 399px;
-    position: absolute;
-    font-size: 96px;
-    opacity: 0.7;
-    color: #ffc0e4;
+    /* Changed: Position relative to overlay bar */
+    top: 71%;
 }
 
+/* ==================== SECTION 2 - What's New Content ==================== */
 .sec2{
-    height: 900px;
-    width: 1440px;
+    /* Changed: Made section flexible with auto height */
+    min-height: 500px;
+    height: auto; /* Changed: From fixed 900px */
+    width: 100%; /* Changed: From fixed 1440px */
     position: relative;
+    padding: 70px 5%;
+    margin-bottom: 20px;
 }
 
 .sec2 h2{
-    height: 249px;
-    width: 1440px;
-    top: 70px;
-    left: 99px;
-    font-size: 64px;
-    font-weight: ExtraBold;
-    position: absolute; 
+    /* Changed: Made heading responsive */
+    font-size: clamp(40px, 6vw, 64px);
+    font-weight: 800;
     color: #ffc0e4;
+    margin-bottom: 30px;
+    position: relative; /* Changed: From absolute */
+    /* Added: Text shadow for consistency */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
 }
 
 .sec2 p{
-    height: 96px;
-    width: 1242px;
-    top: 200px;
-    left: 99px;
-    font-size: 44px;
-    position: absolute; 
+    /* Changed: Made paragraph responsive */
+    font-size: clamp(18px, 2.5vw, 44px);
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    position: relative; /* Changed: From absolute */
+    width: 1442px;
 }
 
+/* ==================== FOOTER - Made Responsive ==================== */
 .Footer{
-    height: 388px;
-    width: 1440px;
+    min-height: 300px;
+    width: 100%;
     position: relative;
     background-color: black;
+    padding: 40px 5%;
+    text-align: center;
 }
 
 .logo7{
-    height: 111px;
-    width: 401px;
-    top: 48px;
-    right: 515px;
-    bottom: 229px;      
-    left: 524px;
-    position: absolute;
+    /* Changed: Responsive footer logo */
+    height: clamp(70px, 10vw, 111px);
+    width: clamp(250px, 35vw, 401px);
+    margin: 0 auto 20px;
+    position: relative;
     background-color: black;
     background-image: url("cap images/Gemini_Generated_Image_j2ln6qj2ln6qj2ln-removebg-preview.png");
     background-size: cover;
@@ -262,94 +319,330 @@ body{
 }
 
 .strong{
-    height: 36px;
-    width: 1440px;
-    top: 159px;     
-    right: 0px;
-    bottom: 193px;
-    left: 0px;
-    font-size: 24px;
-    position: absolute;
-    text-align: center;
+    width: 100%;
+    font-size: clamp(18px, 2.5vw, 24px);
+    margin: 20px 0;
     color: white;
 }
 
 .sign{
-    height: 72px;
-    width: 1077px;
-    top: 200px;
-    right: 182px;
-    bottom: 116px;
-    left: 181px;
-    font-size: 24px;
-    position: absolute;
-    text-align: center;
+    width: 90%;
+    max-width: 1077px;
+    font-size: clamp(14px, 2vw, 24px);
+    margin: 20px auto;
     color: white;
+    line-height: 1.5;
+}
+
+/* Changed: Social media buttons container */
+.Footer .facebook,
+.Footer .linkedin,
+.Footer .twitter,
+.Footer .instagram,
+.Footer .youtube{
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    position: relative;
+    margin: 10px 8px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    border: none;
 }
 
 .facebook{
-    height: 40px;
-    width: 40px;
-    top: 293px;
-    right: 772px;
-    bottom: 55px;
-    left: 628px;
-    position: absolute;
     background-image: url("cap images/f5a0bum23hqqkb7qk2q1h1lpje.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: black;
-    border: none;
 }
 
 .linkedin{
-    height: 40px;
-    width: 40px;
-    top: 293px;
-    right: 724px;
-    bottom: 55px;
-    left: 676px;
-    position: absolute;
     background-image: url("cap images/3kft339tguuarggagqlqho6dbh.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: black;
-    border: none;
 }
+
 .twitter{
-    height: 40px;
-    width: 40px;
-    top: 293px;
-    right: 676px;
-    bottom: 55px;
-    left: 724px;
-    position: absolute;
     background-image: url("cap images/Twitter-X-White-Logo-PNG.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: black;
-    border: none;
 }
+
 .instagram{
-    height: 40px;
-    width: 40px;
-    top: 293px;
-    right: 628px;
-    bottom: 55px;
-    left: 772px;
-    position: absolute;
     background-image: url("cap images/image copy 7.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: black;
-    border: none;
 }
 
 button:hover{
     cursor: pointer;
 }
 
+/* ==================== MEDIA QUERIES - Tablet Devices ==================== */
+@media screen and (max-width: 1024px) {
+    body {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    
+    /* Navbar adjustments for tablets */
+    .navbar {
+        height: auto;
+        padding: 15px 2%;
+        gap: 10px;
+    }
+    
+    .About, .Support, .More {
+        height: 50px;
+        width: 120px;
+    }
+    
+    /* Section 1 adjustments */
+    .sec1 {
+        min-height: 500px;
+        padding: 30px 15px;
+    }
+    
+    .one, .two, .three {
+        height: 90px;
+    }
+    
+    .a, .b, .c {
+        font-size: clamp(40px, 7vw, 80px);
+    }
+    
+    /* Section 2 adjustments */
+    .sec2 {
+        padding: 60px 4%;
+    }
+    
+    .sec2 h2 {
+        font-size: clamp(36px, 5vw, 56px);
+    }
+    
+    .sec2 p {
+        font-size: clamp(16px, 2.2vw, 36px);
+    }
+}
+
+/* ==================== MEDIA QUERIES - Small Tablets ==================== */
+@media screen and (max-width: 768px) {
+    body {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    
+    /* Stack navbar items vertically */
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 20px;
+        height: auto;
+    }
+    
+    .logo {
+        margin-bottom: 15px;
+    }
+    
+    /* Section 1 adjustments */
+    .sec1 {
+        min-height: 450px;
+        padding: 25px 15px;
+        border-radius: 20px;
+    }
+    
+    .one, .two, .three {
+        height: 75px;
+    }
+    
+    /* Adjust text positioning for smaller screens */
+    .a {
+        top: 12%;
+    }
+    
+    .b {
+        top: 41%;
+    }
+    
+    .c {
+        top: 72%;
+    }
+    
+    .a, .b, .c {
+        font-size: clamp(36px, 7vw, 64px);
+        width: 95%;
+    }
+    
+    /* Section 2 adjustments */
+    .sec2 {
+        padding: 50px 5%;
+    }
+    
+    .sec2 h2 {
+        font-size: clamp(32px, 6vw, 48px);
+        margin-bottom: 25px;
+    }
+    
+    .sec2 p {
+        font-size: clamp(16px, 2.8vw, 28px);
+        line-height: 1.5;
+    }
+}
+
+/* ==================== MEDIA QUERIES - Mobile Devices ==================== */
+@media screen and (max-width: 480px) {
+    body {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    /* Compact navbar for mobile */
+    .navbar {
+        padding: 10px;
+        gap: 10px;
+    }
+    
+    .logo {
+        width: 200px;
+        height: 60px;
+    }
+    
+    .About, .Support, .More {
+        width: 80px;
+        height: 40px;
+    }
+    
+    .Buy, .Search, .Profile {
+        height: 40px;
+        width: 40px;
+    }
+    
+    /* Section 1 mobile adjustments */
+    .sec1 {
+        min-height: 400px;
+        padding: 20px 10px;
+        border-radius: 15px;
+    }
+    
+    .one, .two, .three {
+        height: 65px;
+    }
+    
+    .a, .b, .c {
+        font-size: clamp(28px, 7vw, 48px);
+        width: 90%;
+        padding: 0 10px;
+    }
+    
+    /* Adjust positioning for mobile */
+    .a {
+        top: 13%;
+    }
+    
+    .b {
+        top: 42%;
+    }
+    
+    .c {
+        top: 73%;
+    }
+    
+    /* Section 2 mobile */
+    .sec2 {
+        padding: 40px 4%;
+    }
+    
+    .sec2 h2 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    
+    .sec2 p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+    
+    /* Footer mobile */
+    .Footer {
+        padding: 30px 5%;
+    }
+    
+    .logo7 {
+        width: 200px;
+        height: 60px;
+    }
+    
+    .strong {
+        font-size: 16px;
+    }
+    
+    .sign {
+        font-size: 12px;
+        width: 95%;
+    }
+    
+    .Footer button {
+        height: 35px;
+        width: 35px;
+        margin: 8px 5px;
+    }
+}
+
+/* ==================== MEDIA QUERIES - Very Small Devices ==================== */
+@media screen and (max-width: 360px) {
+    /* Ultra-compact layout for very small screens */
+    .navbar {
+        gap: 5px;
+    }
+    
+    .About, .Support, .More {
+        width: 70px;
+        height: 35px;
+    }
+    
+    .sec1 {
+        min-height: 350px;
+        padding: 15px 8px;
+    }
+    
+    .one, .two, .three {
+        height: 55px;
+    }
+    
+    .a, .b, .c {
+        font-size: 24px;
+        width: 95%;
+    }
+    
+    .sec2 {
+        padding: 35px 3%;
+    }
+    
+    .sec2 h2 {
+        font-size: 28px;
+    }
+    
+    .sec2 p {
+        font-size: 14px;
+    }
+}
+
+/* ==================== LANDSCAPE MODE ADJUSTMENTS ==================== */
+@media screen and (max-height: 600px) and (orientation: landscape) {
+    /* Adjust heights for landscape mode on mobile devices */
+    .sec1 {
+        min-height: 450px;
+    }
+    
+    .navbar {
+        height: auto;
+        padding: 10px 2%;
+    }
+    
+    .one, .two, .three {
+        height: 60px;
+    }
+    
+    .a, .b, .c {
+        font-size: clamp(32px, 6vw, 56px);
+    }
+    
+    .sec2 {
+        padding: 40px 5%;
+    }
+}

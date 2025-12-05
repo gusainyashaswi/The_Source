@@ -208,12 +208,12 @@ body{
 #search-box{
     /* Changed: Made search box responsive */
     height: clamp(60px, 8vh, 85px);
-    width: min(458px, 90%);
+    width: 600px;
     position: relative; /* Changed: From absolute */
     border-radius: 50px;
     border: none;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.9); /* Changed: From black with opacity */
+    background-color: rgba(27, 31, 66, 0.9); /* Changed: From black with opacity */
     color: black;
     font-size: clamp(14px, 1.5vw, 16px);
     transition: all 0.3s ease; /* Added: Smooth transition */
@@ -256,9 +256,9 @@ body{
 }
 
 /* Changed: Created wrapper for grid layout instead of absolute positioning */
-.sec2 > div:not(.sec2 h3) {
+/* .sec2 > div:not(.sec2 h3) {
     /* This targets all direct children divs except h3 */
-}
+
 
 .one, .two, .three, .four, .five, .six{
     /* Changed: Removed absolute positioning, made responsive */
@@ -364,7 +364,7 @@ body{
     position: relative; /* Changed: From absolute */
     background-color: black;
     background-image: url("cap images/Gemini_Generated_Image_j2ln6qj2ln6qj2ln-removebg-preview.png");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -398,7 +398,7 @@ body{
     display: inline-block; /* Changed: From absolute positioning */
     position: relative; /* Changed: From absolute */
     margin: 10px 8px;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-color: black;
