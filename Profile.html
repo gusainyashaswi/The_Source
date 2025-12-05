@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - The Source</title>
+    <link rel="stylesheet" href="./Profile.css">
+    
+    <style>
+        /* ========== CSS FOR EDITABLE USERNAME ========== */
+        .username-edit-mode {
+            background-color: #2d2d2d;
+            border: 2px solid gold;
+            padding: 8px 15px;
+            border-radius: 10px;
+            color: white;
+            font-size: clamp(28px, 4vw, 42px);
+            font-family: Arial, Helvetica, sans-serif;
+            width: 100%;
+            max-width: 400px;
+        }
+        
+        /* ========== CSS FOR HIDDEN ACHIEVEMENT DETAILS ========== */
+        .achievement-full-details {
+            display: none;
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 12px;
+        }
+        
+        .achievement-card.expanded .achievement-full-details {
+            display: block;
+        }
+
+        <style>
+        /* ========== CSS FOR SEARCH BOX ========== */
+        
+        /* Container for search box and suggestions */
+        #searchContainer {
+            display: none;  /* Hidden by default */
+            position: absolute;
+            top: 110px;  /* Below navbar */
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
+            max-width: 500px;
+            background-color: rgba(0, 0, 0, 0.95);
+            border: 2px solid gold;
+            border-radius: 15px;
+            padding: 20px;
+            z-index: 1000;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+        }
+        
+        /* Search input field */
+        #searchInput {
+            width: 100%;
+            padding: 15px;
+            font-size: 18px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 10px;
+            background-color: #1a1a1a;
+            color: white;
+            outline: none;
+        }
+        
+        #searchInput::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+        }
+        
+        #searchInput:focus {
+            border-color: gold;
+        }
+        
+        /* Container for suggestions */
+        #suggestionsBox {
+            margin-top: 10px;
+            display: none;  /* Hidden until user types */
+        }
+        
+        /* Individual suggestion items */
+        .suggestion-item {
+            padding: 12px 15px;
+            background-color: #2d2d2d;
+            color: white;
+            margin-bottom: 5px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .suggestion-item:hover {
+            background-color: gold;
+            color: black;
+            transform: translateX(5px);
+        }
+        
+        /* Close button */
+        #closeSearch {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+            padding: 5px 10px;
+        }
+        
+        #closeSearch:hover {
+            color: gold;
+        }
+    </style>
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR - Exact copy from previous files -->
+    <div class="navbar">
+        <a href="./PAGE1.HTML"><div class="logo"></div></a>
+        <div class="m">
+            <a href="./About.html"><button class="About"></button></a>
+            <a href="./Support.html"><button class="Support"></button></a>
+            <a href="./More.html"><button class="More"></button></a>
+        </div>
+        <div class="d">
+        <a class="buy" href="#buy-section"><button class="Buy"></button></a>
+        <a href="#"><button class="Search"></button></a>
+        <a href="./Profile.html"><button class="Profile"></button></a>
+        </div>
+    </div>
+
+    <!-- PROFILE HEADER SECTION -->
+    <div class="profile-header">
+        <div class="profile-banner"></div>
+        <div class="profile-info">
+            <div class="avatar-container">
+                <div class="user-avatar"></div>
+            </div>
+            <div class="user-details">
+                <!-- CHANGED: Added id to username so we can edit it -->
+                <h1 class="username" id="username">Yashaswi Gusain</h1>
+                <p class="tagline">Explorer of Devbhoomi • Level 42 Adventurer</p>
+                <!-- CHANGED: Added id to button so we can detect clicks -->
+                <button class="edit-profile-btn" id="editBtn">Edit Profile</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN PROFILE CONTENT -->
+    <div class="profile-content">
+        
+        <!-- LEFT COLUMN: Account Details & Settings -->
+        <div class="profile-left">
+            
+            <!-- ACCOUNT DETAILS BOX -->
+            <div class="account-details-box">
+                <h2>Account Details</h2>
+                <div class="detail-item">
+                    <span class="detail-label">Email:</span>
+                    <span class="detail-value">Yashaswi@example.com</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Member Since:</span>
+                    <span class="detail-value">January 2024</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Membership:</span>
+                    <span class="detail-value membership-badge">Premium</span>
+                </div>
+                
+                <!-- LINKED PLATFORMS -->
+                <div class="linked-platforms">
+                    <h3>Linked Platforms</h3>
+                    <div class="platform-icons">
+                        <div class="platform-icon ps5-icon" title="PlayStation 5"></div>
+                        <div class="platform-icon xbox-icon" title="Xbox Series X|S"></div>
+                        <div class="platform-icon pc-icon" title="PC"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SETTINGS SHORTCUTS -->
+            <div class="settings-shortcuts">
+                <h2>Quick Settings</h2>
+                <button class="setting-btn">
+                    <span class="setting-icon">👤</span>
+                    <span>Manage Account</span>
+                </button>
+                <button class="setting-btn">
+                    <span class="setting-icon">🔒</span>
+                    <span>Privacy Settings</span>
+                </button>
+                <button class="setting-btn">
+                    <span class="setting-icon">🔔</span>
+                    <span>Notifications</span>
+                </button>
+                <button class="setting-btn">
+                    <span class="setting-icon">🔗</span>
+                    <span>Connected Devices</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- RIGHT COLUMN: Game Progress & Achievements -->
+        <div class="profile-right">
+            
+            <!-- GAME PROGRESS SECTION -->
+            <div class="game-progress-section">
+                <h2>Game Progress</h2>
+                
+                <!-- The Source Game Card -->
+                <div class="game-card">
+                    <div class="game-card-header">
+                        <div class="game-logo source-logo"></div>
+                        <div class="game-info">
+                            <h3>The Source</h3>
+                            <p class="playtime">42 hours played</p>
+                        </div>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 68%"></div>
+                    </div>
+                    <p class="progress-text">68% Complete • 9 of 13 Regions Discovered</p>
+                </div>
+
+                <!-- The Source+ Game Card -->
+                <div class="game-card">
+                    <div class="game-card-header">
+                        <div class="game-logo source-plus-logo"></div>
+                        <div class="game-info">
+                            <h3>The Source+</h3>
+                            <p class="playtime">18 hours played</p>
+                        </div>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 34%"></div>
+                    </div>
+                    <p class="progress-text">34% Complete • 5 of 15 Regions Discovered</p>
+                </div>
+            </div>
+
+            <!-- ACHIEVEMENTS SECTION -->
+            <div class="achievements-section">
+                <h2>Recent Achievements</h2>
+                <div class="achievements-grid">
+                    
+                    <!-- CHANGED: Added class for JS to target -->
+                    <div class="achievement-card clickable-achievement">
+                        <div class="achievement-icon">🏔️</div>
+                        <div class="achievement-details">
+                            <h4>Peak Climber</h4>
+                            <p>Reached the summit of Kedarnath</p>
+                            <!-- NEW: Hidden details -->
+                            <div class="achievement-full-details">
+                                Unlocked: March 15, 2024 • Rare Achievement
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="achievement-card clickable-achievement">
+                        <div class="achievement-icon">🗺️</div>
+                        <div class="achievement-details">
+                            <h4>Explorer</h4>
+                            <p>Discovered 5 hidden temples</p>
+                            <div class="achievement-full-details">
+                                Unlocked: February 28, 2024 • Common Achievement
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="achievement-card clickable-achievement">
+                        <div class="achievement-icon">⚔️</div>
+                        <div class="achievement-details">
+                            <h4>Warrior Spirit</h4>
+                            <p>Defeated 100 challenges</p>
+                            <div class="achievement-full-details">
+                                Unlocked: April 2, 2024 • Epic Achievement
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="achievement-card clickable-achievement">
+                        <div class="achievement-icon">📚</div>
+                        <div class="achievement-details">
+                            <h4>Lore Keeper</h4>
+                            <p>Collected 50 ancient texts</p>
+                            <div class="achievement-full-details">
+                                Unlocked: March 20, 2024 • Rare Achievement
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="achievement-card clickable-achievement">
+                        <div class="achievement-icon">🌟</div>
+                        <div class="achievement-details">
+                            <h4>Devbhoomi Guide</h4>
+                            <p>Completed all main quests</p>
+                            <div class="achievement-full-details">
+                                Unlocked: April 10, 2024 • Legendary Achievement
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="achievement-card clickable-achievement">
+                        <div class="achievement-icon">💎</div>
+                        <div class="achievement-details">
+                            <h4>Treasure Hunter</h4>
+                            <p>Found 25 rare artifacts</p>
+                            <div class="achievement-full-details">
+                                Unlocked: March 5, 2024 • Epic Achievement
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- FOOTER - Exact copy from previous files -->
+    <div class="Footer">
+        <div class="logo7"></div>
+        <p class="strong"><strong>Subscribe to the Source Games Email List</strong></p>
+        <p class="sign">Sign up for our email newsletter to get info on game announcements and updates, details on special events and offers, and more from Source Games and our affiliates.</p>
+        <button class="facebook"></button>
+        <button class="twitter"></button>
+        <button class="instagram"></button>
+        <button class="linkedin"></button>
+        <button class="youtube"></button>
+    </div>
+
+    <!-- ========== SIMPLE DOM MANIPULATION JAVASCRIPT ========== -->
+    <script>
+        // ========== FEATURE 1: EDIT USERNAME ON BUTTON CLICK ==========
+        
+        // Step 1: Get the edit button element
+        var editButton = document.getElementById('editBtn');
+        
+        // Step 2: Get the username heading element
+        var usernameElement = document.getElementById('username');
+        
+        // Step 3: Store the original username
+        var originalUsername = usernameElement.innerText;
+        
+        // Step 4: Track if we are in edit mode
+        var isEditing = false;
+        
+        // Step 5: Add click listener to the edit button
+        editButton.addEventListener('click', function() {
+            
+            // Check if we're currently editing
+            if (isEditing) {
+                // SAVE MODE: User is done editing, save the changes
+                
+                // Get the input field that was created
+                var inputField = document.querySelector('.username-edit-mode');
+                
+                // Get the new username from the input field
+                var newUsername = inputField.value;
+                
+                // If user didn't enter anything, use original name
+                if (newUsername.trim() === '') {
+                    newUsername = originalUsername;
+                }
+                
+                // Replace the input field with the new username text
+                usernameElement.innerText = newUsername;
+                
+                // Change button text back to "Edit Profile"
+                editButton.innerText = 'Edit Profile';
+                
+                // Turn off edit mode
+                isEditing = false;
+                
+            } else {
+                // EDIT MODE: Let user edit their username
+                
+                // Get current username text
+                var currentName = usernameElement.innerText;
+                
+                // Create an input field
+                var inputField = document.createElement('input');
+                inputField.type = 'text';
+                inputField.value = currentName;
+                inputField.className = 'username-edit-mode';
+                
+                // Replace the username text with the input field
+                usernameElement.innerText = '';
+                usernameElement.appendChild(inputField);
+                
+                // Focus the input so user can start typing
+                inputField.focus();
+                
+                // Change button text to "Save Changes"
+                editButton.innerText = 'Save Changes';
+                
+                // Turn on edit mode
+                isEditing = true;
+            }
+        });
+        
+        
+        // ========== FEATURE 2: CLICK ACHIEVEMENTS TO SHOW MORE INFO ==========
+        
+        // Step 1: Get all achievement cards
+        var achievementCards = document.querySelectorAll('.clickable-achievement');
+        
+        // Step 2: Loop through each achievement card
+        for (var i = 0; i < achievementCards.length; i++) {
+            
+            // Step 3: Add click listener to each card
+            achievementCards[i].addEventListener('click', function() {
+                
+                // Step 4: Toggle the 'expanded' class on this card
+                // This shows/hides the extra details
+                this.classList.toggle('expanded');
+                
+                // Optional: Change the border color when expanded
+                if (this.classList.contains('expanded')) {
+                    this.style.borderColor = 'gold';
+                }
+                 else {
+                    this.style.borderColor = 'rgba(255, 255, 255, 0.1)';
+                }
+            });
+        }
+        
+    </script>
+
+    <script src="./Page1.js"></script>
+
+</body>
+</html>

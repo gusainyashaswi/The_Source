@@ -208,12 +208,12 @@ body{
 .sec2{
     /* Changed: Made responsive dimensions */
     min-height: 600px;
-    height: auto;
     width: 100%;
+    height: clamp(600px, 90vh, 904px);
     position: relative;
     /* Added: Padding for content */
-    padding: 50px 5%;
-    margin-bottom: 20px;
+    padding: 40px 5%;
+    /* margin-bottom: 20px; */
 }
 
 .sec2::before{

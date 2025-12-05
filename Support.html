@@ -5,15 +5,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./Support.css">
+    <style>
+        /* ========== CSS FOR SEARCH BOX ========== */
+        
+        /* Container for search box and suggestions */
+        #searchContainer {
+            display: none;  /* Hidden by default */
+            position: absolute;
+            top: 110px;  /* Below navbar */
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
+            max-width: 500px;
+            background-color: rgba(0, 0, 0, 0.95);
+            border: 2px solid gold;
+            border-radius: 15px;
+            padding: 20px;
+            z-index: 1000;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+        }
+        
+        /* Search input field */
+        #searchInput {
+            width: 100%;
+            padding: 15px;
+            font-size: 18px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 10px;
+            background-color: #1a1a1a;
+            color: white;
+            outline: none;
+        }
+        
+        #searchInput::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+        }
+        
+        #searchInput:focus {
+            border-color: gold;
+        }
+        
+        /* Container for suggestions */
+        #suggestionsBox {
+            margin-top: 10px;
+            display: none;  /* Hidden until user types */
+        }
+        
+        /* Individual suggestion items */
+        .suggestion-item {
+            padding: 12px 15px;
+            background-color: #2d2d2d;
+            color: white;
+            margin-bottom: 5px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .suggestion-item:hover {
+            background-color: gold;
+            color: black;
+            transform: translateX(5px);
+        }
+        
+        /* Close button */
+        #closeSearch {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+            padding: 5px 10px;
+        }
+        
+        #closeSearch:hover {
+            color: gold;
+        }
+    </style>
 </head>
 <body>
 
-    <div class="navbar">
-        <div class="logo">
+     <div class="navbar">
+        <a href="./PAGE1.HTML"><div class="logo">
         <!-- <a href="./PAGE1.HTML"> -->
             <!-- <img class="logo" src="cap images/Gemini_Generated_Image_j2ln6qj2ln6qj2ln-removebg-preview.png" alt=""> -->
         <!-- </a> -->
-        </div>
+        </div></a>
         <div class="m">
             <a href="./About.html"><button class="About"></button></a>
             <a href="./Support.html"><button class="Support"></button></a>
@@ -22,7 +102,7 @@
         <div class="d">
         <a href="#"><button class="Buy"></button></a>
         <a href="#"><button class="Search"></button></a>
-        <a href="#"><button class="Profile"></button></a>
+        <a href="./Profile.html"><button class="Profile"></button></a>
         </div>
     </div>
 
@@ -83,6 +163,8 @@
         <button class="linkedin"></button>
         <button class="youtube"></button>
     </div>
+
+    <script src="./Page1.js"></script>
 
 </body>
 </html>

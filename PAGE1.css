@@ -132,6 +132,9 @@ body{
     flex-shrink: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 .Search{
     height: 50px;
     width: 50px;
