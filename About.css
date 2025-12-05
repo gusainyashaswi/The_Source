@@ -3,97 +3,127 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
 body{
     background-color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* Changed: Made margins responsive using percentage and max-width */
+    margin-left: 5%;
+    margin-right: 5%;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+/* ==================== NAVBAR - Made Fully Responsive ==================== */
 .navbar{
     height: 102px;
-    width: 1440px;
+    width: 100%;
     background-color: black;
-    margin: 0px;
+    /* Removed: Fixed margin-left */
     position: relative;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    /* padding: 0px 2%; */
+    flex-wrap: wrap;
+    /* Added: Prevent overflow */
+    overflow: hidden;
 }
 
 .logo{
-    height: 111px;
-    width: 391px;
-    top:-12px;
-    right: 1702px;
-    bottom: 3px;
-    left: -23px;
-    position: absolute;
+    /* Changed: Made dimensions responsive */
+    height: 100px;
+    width: clamp(391px, 25vw, 391px);
+    width: 300px;
+    position: relative;
+    /* Removed: Fixed positioning values */
     background-image: url("cap images/Gemini_Generated_Image_j2ln6qj2ln6qj2ln-removebg-preview.png");
+
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-color: black;
+    border: 0px;
+    flex-shrink: 0;
+
+}
+
+.m{
+    display:flex;
+    height: 102px;
+    justify-content: center;
+    align-items: center;
+    gap: -100px;
+}
+
+.d{
+    display: flex;
+    height: 102px;
+    justify-content: center;
+    align-items: center;
+    /* gap: -100px; */
+    margin-right: 50px;
+
+}
+
+/* Changed: Navigation buttons to use relative positioning and flexbox */
+.navbar a:nth-child(2),
+.navbar a:nth-child(3),
+.navbar a:nth-child(4) {
+    display: flex;
+}
+
+.About,
+.Support,
+.More{
+    /* Changed: Made responsive with max dimensions */
+    height: 60px;
+    width: 150px;
+    /* width: clamp(100px, 12vw, 180px); */
+    position: relative;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     background-color: black;
-    border: 0px;
+    border-radius: 50px;
+    border: none;
+    flex-shrink: 0;
+    /* margin: 10px; */
 }
 
 .About{
-    height: 93px;
-    width: 180px;
-    top: 1px;
-    right: 765px;
-    bottom: 8px;
-    left: 495px;
-    position: absolute;
     background-image: url("cap images/Gemini_Generated_Image_ah5ysaah5ysaah5y-removebg-preview.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: black;
-    border-radius: 50px;
-    border: none;
+    padding: 0px;
+    /* margin-right: 10px; */
 }
 
 .Support{
-    height: 93px;
-    width: 180px;
-    top: 4px;
-    right: 633px;
-    bottom: 5px;
-    left: 627px;
-    position: absolute;
     background-image: url("cap images/Gemini_Generated_Image_rwcdjyrwcdjyrwcd-removebg-preview.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: black;
-    border-radius: 50px;
-    border: none;
     z-index: 1;
+    /* margin-left: 10px;
+    margin-right: 10px; */
 }
 
 .More{
-    height: 93px;
-    width: 180px;
-    top: 1px;
-    right: 491px;
-    bottom: 8px;
-    left: 769px;
-    position: absolute;
     background-image: url("cap images/Gemini_Generated_Image_52whpf52whpf52wh-removebg-preview.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: black;
-    border-radius: 50px;
-    border: none;
 }
 
 .Buy{
-    height: 56px;
-    width: 110px;
-    top: 20px;
-    right: 152px;
-    bottom: 26px;
-    left: 1178px;
-    position: absolute;
+    height: 50px;
+    width: clamp(80px, 8vw, 110px);
     border-radius: 50px;
     background-image: url("cap images/Gemini_Generated_Image_oh280yoh280yoh28-removebg-preview.png");
     background-size: cover;
@@ -101,48 +131,41 @@ body{
     background-position: center;
     background-color: black;
     border: 1px solid gold;
+    flex-shrink: 0;
 }
 
 .Search{
-    height: 67px;
-    width: 67px;
-    top: 15px;
-    right: 85px;
-    bottom: 20px;
-    left: 1288px;
-    position: absolute;
+    height: 50px;
+    width: 50px;
     background-image: url("cap images/Gemini_Generated_Image_vlchwjvlchwjvlch-removebg-preview.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-color: black;
     border: 0px;
+    flex-shrink: 0;
 }
 
 .Profile{
-    height: 67px;
-    width: 67px;
-    top: 15px;
-    right: 18px;
-    bottom: 20px;
-    left: 1355px;
-    position: absolute;
+    height: 50px;
+    width: 50px;
     background-image: url("cap images/Gemini_Generated_Image_mceivsmceivsmcei-removebg-preview.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-color: black;
     border: 0px;
+    flex-shrink: 0;
 }
 
 #search-box{
+    /* Changed: Made responsive */
     height: 85px;
-    width: 458px;
-    top: 232px;
-    right: 497px;
-    bottom: 192px;
-    left: 485px;
+    width: min(458px, 90%);
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     border-radius: 50px;
     border: none;
     padding: 20px;
@@ -151,32 +174,46 @@ body{
     color: black;
 }
 
+/* ==================== SECTION 1 - Hero Section ==================== */
 .sec1{
-    height: 743px;
-    width: 1440px;
+    /* Changed: Made responsive height and width */
+    min-height: 500px;
+    height: clamp(500px, 70vh, 743px);
+    width: 100%;
     background-image: url("cap images/1a6cfad4905305f734adcc69a7313d26.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     position: relative;
     border-radius: 30px;
+    /* Added: Padding for content spacing */
+    padding: 30px;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
 }
 
 .sec1 h2{
-    height: 259px;
-    width: 629px;
+    /* Changed: Made heading responsive */
     color: white;
-    font-size: 96px;
-    top: 26px;
-    left: 22px;
-    position: absolute;
+    font-size: clamp(48px, 8vw, 96px);
+    position: relative;
     font-family: Arial, Helvetica, sans-serif;
     opacity: 0.8;
+    line-height: 1.2;
+    max-width: 90%;
 }
 
+/* ==================== SECTION 2 - The Idea Section ==================== */
 .sec2{
-    height: 900px;
-    width: 1440px;
+    /* Changed: Made responsive dimensions */
+    min-height: 600px;
+    height: auto;
+    width: 100%;
     position: relative;
+    /* Added: Padding for content */
+    padding: 50px 5%;
+    margin-bottom: 20px;
 }
 
 .sec2::before{
@@ -186,316 +223,1048 @@ body{
     background-image: url("cap images/d0c78e0a2afe5ef4c8c9af0c59337c23.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: 0.7;
+    background-position: center;
+    opacity: 0.2;
     z-index: -1; 
 }
 
 .sec2 h2{
-    height: 100px;
-    width: 1074px;
-    font-size: 96px;
-    top: 50px;
-    left: 17px;
-    position: absolute;
+    /* Changed: Responsive heading */
+    width: 100%;
+    font-size: clamp(36px, 7vw, 96px);
+    position: relative;
     color: white;
-    font-size: 96px;
     font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 30px;
 }
 
 .sec2 p{
-    height: 81px;
-    width: 1260px;
-    top: 200px;
-    left: 80px;
+    /* Changed: Responsive paragraph */
+    width: 100%;
+    max-width: 1360px;
     color: white;
-    font-size: 35px;
-    position: absolute;
+    font-size: clamp(18px, 2.5vw, 35px);
+    position: relative;
     font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
 }
 
-
+/* ==================== SECTION 3 - Team Section ==================== */
 .sec3{
-    height: 900px;
-    width: 1400px;
+    /* Changed: Made responsive */
+    min-height: 700px;
+    height: auto;
+    width: 100%;
     position: relative;
+    /* Added: Padding and centering */
+    padding: 50px 5%;
+    margin-bottom: 20px;
 }
 
 .sec3 h1{
-    height: 259px;
-    width: 906px;
-    font-size: 96px;
+    /* Changed: Responsive main heading */
+    width: 100%;
+    font-size: clamp(36px, 7vw, 96px);
     color: white;
-    top: 50px;
-    left: 276px;
-    position: absolute;
+    position: relative;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* Changed: Made team member listings responsive with consistent spacing */
+.sec3 h4 {
+    width: 100%;
+    max-width: 1124px;
+    margin: 0 auto;
+    position: relative;
+    font-size: clamp(20px, 2.8vw, 32px);
+    text-align: center;
+    padding: 8px 0;
+    transition: font-size 0.2s ease;
 }
 
 .a{
-    height: 60px;
-    width: 1124px;
-    top: 229px;
-    left: 158px;
-    position: absolute;
     color: white;
-    font-size: 32px;
-    text-align: center;
     font-weight: 100;
+    margin-top: 10px;
 }
 
 .a:hover{
-    font-size: 35px;
+    font-size: clamp(22px, 3vw, 35px);
 }
 
 .b{
-    height: 60px;
-    width: 1124px;
-    top: 271px;
-    left: 158px;
-    position: absolute;
     color: yellowgreen;
-    font-size: 32px;
-    text-align: center;
+    font-weight: 100;
+    margin-top: 10px;
 }
 
 .b:hover{
-    font-size: 37px;
+    font-size: clamp(23px, 3.2vw, 37px);
 }
 
 .c{
-    height: 60px;
-    width: 1124px;
-    top: 354px;
-    left: 158px;
-    position: absolute;
     color: white;
-    font-size: 32px;
-    text-align: center;
     font-weight: 100;
+    margin-top: 10px;
 }
 
 .c:hover{
-    font-size: 35px;
+    font-size: clamp(22px, 3vw, 35px);
 }
 
 .d{
-    height: 60px;
-    width: 1124px;
-    top: 402px;
-    left: 158px;
-    position: absolute;
     color: yellowgreen;
-    font-size: 32px;
-    text-align: center;
+    font-weight: 100;
+    margin-top: 10px;
+    height: 37px;
 }
 
 .d:hover{
-   font-size: 37px; 
+   font-size: clamp(23px, 3.2vw, 37px);
 }
 
 .e{
-    height: 60px;
-    width: 1124px;
-    top: 473px;
-    left: 158px;
-    position: absolute;
     color: white;
-    font-size: 32px;
-    text-align: center;
     font-weight: 100;
 }
 
 .e:hover{
-    font-size: 35px;
+    font-size: clamp(22px, 3vw, 35px);
 }
 
 .f{
-    height: 60px;
-    width: 1124px;
-    top: 512px;
-    left: 158px;
-    position: absolute;
     color: yellowgreen;
-    font-size: 32px;
-    text-align: center;
+    margin-bottom: 30px;
 }
 
 .f:hover{
-    font-size: 37px;
+    font-size: clamp(23px, 3.2vw, 37px);
 }
 
 .g{
-    height: 60px;
-    width: 1124px;
-    top: 592px;
-    left: 158px;
-    position: absolute;
     color: white;
-    font-size: 32px;
-    text-align: center;
     font-weight: 100;
 }
 
 .g:hover{
-    font-size: 35px;
+    font-size: clamp(22px, 3vw, 35px);
 }
 
 .h{
-    height: 60px;
-    width: 1124px;
-    top: 640px;
-    left: 158px;
-    position: absolute;
     color: yellowgreen;
-    font-size: 32px;
-    text-align: center;
+    margin-bottom: 30px;
 }
 
 .h:hover{
-    font-size: 37px;
+    font-size: clamp(23px, 3.2vw, 37px);
 }
 
 .i{
-    height: 60px;
-    width: 1124px;
-    top: 711px;
-    left: 158px;
-    position: absolute;
     color: white;
-    font-size: 32px;
-    text-align: center;
     font-weight: 100;
 }
 
 .i:hover{
-    font-size: 35px;
+    font-size: clamp(22px, 3vw, 35px);
 }
 
 .j{
-    height: 60px;
-    width: 1124px;
-    top: 759px;
-    left: 158px;
-    position: absolute;
     color: yellowgreen;
-    font-size: 32px;
-    text-align: center;
+    margin-bottom: 30px;
 }
 
 .j:hover{
-    font-size: 37px;
+    font-size: clamp(23px, 3.2vw, 37px);
 }
 
+/* ==================== FOOTER - Made Responsive ==================== */
 .Footer{
-    height: 388px;
-    width: 1440px;
+    min-height: 300px;
+    width: 100%;
     position: relative;
     background-color: black;
+    padding: 40px 5%;
+    text-align: center;
 }
 
 .logo7{
-    height: 111px;
-    width: 401px;
-    top: 48px;
-    right: 515px;
-    bottom: 229px;      
-    left: 524px;
-    position: absolute;
+    /* Changed: Responsive footer logo */
+    height: clamp(70px, 10vw, 111px);
+    width: clamp(250px, 35vw, 401px);
+    margin: 0 auto 20px;
+    position: relative;
     background-color: black;
     background-image: url("cap images/Gemini_Generated_Image_j2ln6qj2ln6qj2ln-removebg-preview.png");
-    background-size: cover;
+    background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .strong{
-    height: 36px;
-    width: 1440px;
-    top: 159px;     
-    right: 0px;
-    bottom: 193px;
-    left: 0px;
-    font-size: 24px;
-    position: absolute;
-    text-align: center;
+    width: 100%;
+    font-size: clamp(18px, 2.5vw, 24px);
+    margin: 20px 0;
     color: white;
 }
 
 .sign{
-    height: 72px;
-    width: 1077px;
-    top: 200px;
-    right: 182px;
-    bottom: 116px;
-    left: 181px;
-    font-size: 24px;
-    position: absolute;
-    text-align: center;
+    width: 90%;
+    max-width: 1077px;
+    font-size: clamp(14px, 2vw, 24px);
+    margin: 20px auto;
     color: white;
+    line-height: 1.5;
+}
+
+/* Changed: Social media buttons container */
+.Footer .facebook,
+.Footer .linkedin,
+.Footer .twitter,
+.Footer .instagram,
+.Footer .youtube{
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    position: relative;
+    margin: 10px 8px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    border: none;
 }
 
 .facebook{
-    height: 40px;
-    width: 40px;
-    top: 293px;
-    right: 772px;
-    bottom: 55px;
-    left: 628px;
-    position: absolute;
     background-image: url("cap images/f5a0bum23hqqkb7qk2q1h1lpje.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: black;
-    border: none;
 }
 
 .linkedin{
-    height: 40px;
-    width: 40px;
-    top: 293px;
-    right: 724px;
-    bottom: 55px;
-    left: 676px;
-    position: absolute;
     background-image: url("cap images/3kft339tguuarggagqlqho6dbh.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: black;
-    border: none;
 }
+
 .twitter{
-    height: 40px;
-    width: 40px;
-    top: 293px;
-    right: 676px;
-    bottom: 55px;
-    left: 724px;
-    position: absolute;
     background-image: url("cap images/Twitter-X-White-Logo-PNG.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: black;
-    border: none;
 }
+
 .instagram{
-    height: 40px;
-    width: 40px;
-    top: 293px;
-    right: 628px;
-    bottom: 55px;
-    left: 772px;
-    position: absolute;
     background-image: url("cap images/image copy 7.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: black;
-    border: none;
 }
 
 button:hover{
     cursor: pointer;
 }
 
+
+/* ==================== MEDIA QUERIES - Tablet Adjustments ==================== */
+@media screen and (max-width: 1024px) {
+    body {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    
+    /* Navbar adjustments */
+    .navbar {
+        height: auto;
+        padding: 15px 2%;
+        gap: 10px;
+    }
+    
+    .About, .Support, .More {
+        height: 50px;
+        width: 120px;
+    }
+    
+    /* Section adjustments */
+    .sec1 {
+        padding: 25px;
+    }
+    
+    .sec2,
+    .sec3 {
+        padding: 40px 4%;
+    }
+}
+
+/* ==================== MEDIA QUERIES - Small Tablets ==================== */
+@media screen and (max-width: 768px) {
+    body {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    
+    /* Stack navbar items */
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 20px;
+        height: auto;
+    }
+    
+    .logo {
+        margin-bottom: 15px;
+    }
+    
+    /* Section 1 adjustments */
+    .sec1 {
+        border-radius: 20px;
+        padding: 20px;
+        min-height: 400px;
+    }
+    
+    .sec1 h2 {
+        font-size: clamp(36px, 10vw, 72px);
+    }
+    
+    /* Section 2 adjustments */
+    .sec2 {
+        padding: 35px 5%;
+    }
+    
+    .sec2 h2 {
+        margin-bottom: 25px;
+    }
+    
+    .sec2 p {
+        font-size: clamp(16px, 3vw, 28px);
+    }
+    
+    /* Section 3 team list */
+    .sec3 {
+        padding: 40px 5%;
+    }
+    
+    .sec3 h1 {
+        font-size: clamp(32px, 9vw, 72px);
+        margin-bottom: 35px;
+    }
+    
+    .sec3 h4 {
+        font-size: clamp(18px, 3.5vw, 28px);
+    }
+}
+
+/* ==================== MEDIA QUERIES - Mobile Devices ==================== */
+@media screen and (max-width: 480px) {
+    body {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    /* Mobile navbar */
+    .navbar {
+        padding: 10px;
+        gap: 10px;
+    }
+    
+    .logo {
+        width: 200px;
+        height: 60px;
+    }
+    
+    .About, .Support, .More {
+        width: 80px;
+        height: 40px;
+    }
+    
+    .Buy, .Search, .Profile {
+        height: 40px;
+        width: 40px;
+    }
+    
+    /* Section 1 mobile */
+    .sec1 {
+        min-height: 350px;
+        padding: 20px 15px;
+        border-radius: 15px;
+    }
+    
+    .sec1 h2 {
+        font-size: 36px;
+        line-height: 1.3;
+    }
+    
+    /* Section 2 mobile */
+    .sec2 {
+        padding: 30px 4%;
+        min-height: auto;
+    }
+    
+    .sec2 h2 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    
+    .sec2 p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    
+    /* Section 3 mobile */
+    .sec3 {
+        padding: 30px 4%;
+    }
+    
+    .sec3 h1 {
+        font-size: 28px;
+        margin-bottom: 25px;
+        line-height: 1.3;
+    }
+    
+    .sec3 h4 {
+        font-size: 16px;
+        padding: 6px 0;
+    }
+    
+    /* Adjust hover effects for mobile */
+    .a:hover,
+    .c:hover,
+    .e:hover,
+    .g:hover,
+    .i:hover {
+        font-size: 18px;
+    }
+    
+    .b:hover,
+    .d:hover,
+    .f:hover,
+    .h:hover,
+    .j:hover {
+        font-size: 19px;
+    }
+    
+    /* Footer mobile */
+    .Footer {
+        padding: 30px 5%;
+    }
+    
+    .logo7 {
+        width: 200px;
+        height: 60px;
+    }
+    
+    .strong {
+        font-size: 16px;
+    }
+    
+    .sign {
+        font-size: 12px;
+        width: 95%;
+    }
+    
+    .Footer button {
+        height: 35px;
+        width: 35px;
+        margin: 8px 5px;
+    }
+}
+
+/* ==================== MEDIA QUERIES - Very Small Devices ==================== */
+@media screen and (max-width: 360px) {
+    /* Ultra-compact layout */
+    .navbar {
+        gap: 5px;
+    }
+    
+    .About, .Support, .More {
+        width: 70px;
+        height: 35px;
+    }
+    
+    .sec1 {
+        min-height: 300px;
+        padding: 15px 10px;
+    }
+    
+    .sec1 h2 {
+        font-size: 32px;
+    }
+    
+    .sec2 {
+        padding: 25px 3%;
+    }
+    
+    .sec2 h2 {
+        font-size: 28px;
+    }
+    
+    .sec2 p {
+        font-size: 14px;
+    }
+    
+    .sec3 {
+        padding: 25px 3%;
+    }
+    
+    .sec3 h1 {
+        font-size: 24px;
+    }
+    
+    .sec3 h4 {
+        font-size: 14px;
+    }
+}
+
+/* ==================== LANDSCAPE MODE ADJUSTMENTS ==================== */
+@media screen and (max-height: 600px) and (orientation: landscape) {
+    /* Adjust heights for landscape mode on mobile devices */
+    .sec1 {
+        min-height: 400px;
+    }
+    
+    .sec2,
+    .sec3 {
+        padding: 30px 5%;
+    }
+    
+    .navbar {
+        height: auto;
+        padding: 10px 2%;
+    }
+}
+
+/* ==================== SECTION 1 - Hero Section ==================== */
+.sec1{
+    /* Changed: Made responsive height and width */
+    min-height: 500px;
+    height: clamp(500px, 70vh, 743px);
+    width: 100%;
+    background-image: url("cap images/1a6cfad4905305f734adcc69a7313d26.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    border-radius: 30px;
+    /* Added: Padding for content spacing */
+    padding: 30px;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.sec1 h2{
+    /* Changed: Made heading responsive */
+    color: white;
+    font-size: clamp(48px, 8vw, 96px);
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0.8;
+    line-height: 1.2;
+    max-width: 90%;
+}
+
+/* ==================== SECTION 2 - The Idea Section ==================== */
+.sec2{
+    /* Changed: Made responsive dimensions */
+    min-height: 600px;
+    height: auto;
+    width: 100%;
+    position: relative;
+    /* Added: Padding for content */
+    padding: 50px 5%;
+    margin-bottom: 20px;
+}
+
+.sec2::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("cap images/d0c78e0a2afe5ef4c8c9af0c59337c23.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.7;
+    z-index: -1; 
+}
+
+.sec2 h2{
+    /* Changed: Responsive heading */
+    width: 100%;
+    font-size: clamp(36px, 7vw, 96px);
+    position: relative;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 30px;
+}
+
+.sec2 p{
+    /* Changed: Responsive paragraph */
+    width: 100%;
+    max-width: 1260px;
+    color: white;
+    font-size: clamp(18px, 2.5vw, 35px);
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+/* ==================== SECTION 3 - Team Section ==================== */
+.sec3{
+    /* Changed: Made responsive */
+    min-height: 700px;
+    height: auto;
+    width: 100%;
+    position: relative;
+    /* Added: Padding and centering */
+    padding: 50px 5%;
+    margin-bottom: 20px;
+}
+
+.sec3 h1{
+    /* Changed: Responsive main heading */
+    width: 100%;
+    font-size: clamp(36px, 7vw, 96px);
+    color: white;
+    position: relative;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* Changed: Made team member listings responsive with consistent spacing */
+.sec3 h4 {
+    width: 100%;
+    max-width: 1124px;
+    margin: 0 auto;
+    position: relative;
+    font-size: clamp(20px, 2.8vw, 32px);
+    text-align: center;
+    padding: 8px 0;
+    transition: font-size 0.2s ease;
+}
+
+.a{
+    color: white;
+    font-weight: 100;
+    margin-top: 20px;
+}
+
+.a:hover{
+    font-size: clamp(22px, 3vw, 35px);
+}
+
+.b{
+    color: yellowgreen;
+    margin-bottom: 30px;
+}
+
+.b:hover{
+    font-size: clamp(23px, 3.2vw, 37px);
+}
+
+.c{
+    color: white;
+    font-weight: 100;
+}
+
+.c:hover{
+    font-size: clamp(22px, 3vw, 35px);
+}
+
+.d{
+    color: yellowgreen;
+    margin-bottom: 30px;
+}
+
+.d:hover{
+   font-size: clamp(23px, 3.2vw, 37px);
+}
+
+.e{
+    color: white;
+    font-weight: 100;
+}
+
+.e:hover{
+    font-size: clamp(22px, 3vw, 35px);
+}
+
+.f{
+    color: yellowgreen;
+    margin-bottom: 30px;
+}
+
+.f:hover{
+    font-size: clamp(23px, 3.2vw, 37px);
+}
+
+.g{
+    color: white;
+    font-weight: 100;
+}
+
+.g:hover{
+    font-size: clamp(22px, 3vw, 35px);
+}
+
+.h{
+    color: yellowgreen;
+    margin-bottom: 30px;
+}
+
+.h:hover{
+    font-size: clamp(23px, 3.2vw, 37px);
+}
+
+.i{
+    color: white;
+    font-weight: 100;
+}
+
+.i:hover{
+    font-size: clamp(22px, 3vw, 35px);
+}
+
+.j{
+    color: yellowgreen;
+    margin-bottom: 30px;
+}
+
+.j:hover{
+    font-size: clamp(23px, 3.2vw, 37px);
+}
+
+/* ==================== FOOTER - Made Responsive ==================== */
+.Footer{
+    min-height: 300px;
+    width: 100%;
+    position: relative;
+    background-color: black;
+    padding: 40px 5%;
+    text-align: center;
+}
+
+.logo7{
+    /* Changed: Responsive footer logo */
+    height: clamp(70px, 10vw, 111px);
+    width: clamp(250px, 35vw, 401px);
+    margin: 0 auto 20px;
+    position: relative;
+    background-color: black;
+    background-image: url("cap images/Gemini_Generated_Image_j2ln6qj2ln6qj2ln-removebg-preview.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.strong{
+    width: 100%;
+    font-size: clamp(18px, 2.5vw, 24px);
+    margin: 20px 0;
+    color: white;
+}
+
+.sign{
+    width: 90%;
+    max-width: 1077px;
+    font-size: clamp(14px, 2vw, 24px);
+    margin: 20px auto;
+    color: white;
+    line-height: 1.5;
+}
+
+/* Changed: Social media buttons to inline display */
+.Footer .facebook,
+.Footer .linkedin,
+.Footer .twitter,
+.Footer .instagram,
+.Footer .youtube{
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    position: relative;
+    margin: 10px 8px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    border: none;
+}
+
+.facebook{
+    background-image: url("cap images/f5a0bum23hqqkb7qk2q1h1lpje.png");
+}
+
+.linkedin{
+    background-image: url("cap images/3kft339tguuarggagqlqho6dbh.png");
+}
+
+.twitter{
+    background-image: url("cap images/Twitter-X-White-Logo-PNG.png");
+}
+
+.instagram{
+    background-image: url("cap images/image copy 7.png");
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+/* ==================== MEDIA QUERIES - Tablet Adjustments ==================== */
+@media screen and (max-width: 1024px) {
+    body {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    
+    /* Navbar adjustments */
+    .navbar {
+        height: auto;
+        padding: 15px 2%;
+        gap: 10px;
+    }
+    
+    .About, .Support, .More {
+        height: 50px;
+        width: 120px;
+    }
+    
+    /* Section adjustments */
+    .sec1 {
+        padding: 25px;
+    }
+    
+    .sec2,
+    .sec3 {
+        padding: 40px 4%;
+    }
+}
+
+/* ==================== MEDIA QUERIES - Small Tablets ==================== */
+@media screen and (max-width: 768px) {
+    body {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    
+    /* Stack navbar items */
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 20px;
+        height: auto;
+    }
+    
+    .logo {
+        margin-bottom: 15px;
+    }
+    
+    /* Section 1 adjustments */
+    .sec1 {
+        border-radius: 20px;
+        padding: 20px;
+        min-height: 400px;
+    }
+    
+    .sec1 h2 {
+        font-size: clamp(36px, 10vw, 72px);
+    }
+    
+    /* Section 2 adjustments */
+    .sec2 {
+        padding: 35px 5%;
+    }
+    
+    .sec2 h2 {
+        margin-bottom: 25px;
+    }
+    
+    .sec2 p {
+        font-size: clamp(16px, 3vw, 28px);
+    }
+    
+    /* Section 3 team list */
+    .sec3 {
+        padding: 40px 5%;
+    }
+    
+    .sec3 h1 {
+        font-size: clamp(32px, 9vw, 72px);
+        margin-bottom: 35px;
+    }
+    
+    .sec3 h4 {
+        font-size: clamp(18px, 3.5vw, 28px);
+    }
+}
+
+/* ==================== MEDIA QUERIES - Mobile Devices ==================== */
+@media screen and (max-width: 480px) {
+    body {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    /* Mobile navbar */
+    .navbar {
+        padding: 10px;
+        gap: 10px;
+    }
+    
+    .logo {
+        width: 200px;
+        height: 60px;
+    }
+    
+    .About, .Support, .More {
+        width: 80px;
+        height: 40px;
+    }
+    
+    .Buy, .Search, .Profile {
+        height: 40px;
+        width: 40px;
+    }
+    
+    /* Section 1 mobile */
+    .sec1 {
+        min-height: 350px;
+        padding: 20px 15px;
+        border-radius: 15px;
+    }
+    
+    .sec1 h2 {
+        font-size: 36px;
+        line-height: 1.3;
+    }
+    
+    /* Section 2 mobile */
+    .sec2 {
+        padding: 30px 4%;
+        min-height: auto;
+    }
+    
+    .sec2 h2 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    
+    .sec2 p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    
+    /* Section 3 mobile */
+    .sec3 {
+        padding: 30px 4%;
+    }
+    
+    .sec3 h1 {
+        font-size: 28px;
+        margin-bottom: 25px;
+        line-height: 1.3;
+    }
+    
+    .sec3 h4 {
+        font-size: 16px;
+        padding: 6px 0;
+    }
+    
+    /* Adjust hover effects for mobile */
+    .a:hover,
+    .c:hover,
+    .e:hover,
+    .g:hover,
+    .i:hover {
+        font-size: 18px;
+    }
+    
+    .b:hover,
+    .d:hover,
+    .f:hover,
+    .h:hover,
+    .j:hover {
+        font-size: 19px;
+    }
+    
+    /* Footer mobile */
+    .Footer {
+        padding: 30px 5%;
+    }
+    
+    .logo7 {
+        width: 200px;
+        height: 60px;
+    }
+    
+    .strong {
+        font-size: 16px;
+    }
+    
+    .sign {
+        font-size: 12px;
+        width: 95%;
+    }
+    
+    .Footer button {
+        height: 35px;
+        width: 35px;
+        margin: 8px 5px;
+    }
+}
+
+/* ==================== MEDIA QUERIES - Very Small Devices ==================== */
+@media screen and (max-width: 360px) {
+    /* Ultra-compact layout */
+    .navbar {
+        gap: 5px;
+    }
+    
+    .About, .Support, .More {
+        width: 70px;
+        height: 35px;
+    }
+    
+    .sec1 {
+        min-height: 300px;
+        padding: 15px 10px;
+    }
+    
+    .sec1 h2 {
+        font-size: 32px;
+    }
+    
+    .sec2 {
+        padding: 25px 3%;
+    }
+    
+    .sec2 h2 {
+        font-size: 28px;
+    }
+    
+    .sec2 p {
+        font-size: 14px;
+    }
+    
+    .sec3 {
+        padding: 25px 3%;
+    }
+    
+    .sec3 h1 {
+        font-size: 24px;
+    }
+    
+    .sec3 h4 {
+        font-size: 14px;
+    }
+}
+
+/* ==================== LANDSCAPE MODE ADJUSTMENTS ==================== */
+@media screen and (max-height: 600px) and (orientation: landscape) {
+    /* Adjust heights for landscape mode on mobile devices */
+    .sec1 {
+        min-height: 400px;
+    }
+    
+    .sec2,
+    .sec3 {
+        padding: 30px 5%;
+    }
+    
+    .navbar {
+        height: auto;
+        padding: 10px 2%;
+    }
+}

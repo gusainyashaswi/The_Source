@@ -3,97 +3,125 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
 body{
     background-color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* Changed: Made margins responsive using percentage and max-width */
+    margin-left: 5%;
+    margin-right: 5%;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+/* ==================== NAVBAR - Made Fully Responsive ==================== */
 .navbar{
     height: 102px;
-    width: 1440px;
+    width: 100%;
     background-color: black;
-    margin: 0px;
+    /* Removed: Fixed margin-left */
     position: relative;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    /* padding: 0px 2%; */
+    flex-wrap: wrap;
+    /* Added: Prevent overflow */
+    overflow: hidden;
 }
 
 .logo{
-    height: 111px;
-    width: 391px;
-    top:-12px;
-    right: 1702px;
-    bottom: 3px;
-    left: -23px;
-    position: absolute;
+    /* Changed: Made dimensions responsive */
+    height: 100px;
+    width: clamp(391px, 25vw, 391px);
+    width: 300px;
+    position: relative;
+    /* Removed: Fixed positioning values */
     background-image: url("cap images/Gemini_Generated_Image_j2ln6qj2ln6qj2ln-removebg-preview.png");
+
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-color: black;
+    border: 0px;
+    flex-shrink: 0;
+
+}
+
+.m{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: -100px;
+}
+
+.d{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: -100px; */
+    margin-right: 50px;
+
+}
+
+/* Changed: Navigation buttons to use relative positioning and flexbox */
+.navbar a:nth-child(2),
+.navbar a:nth-child(3),
+.navbar a:nth-child(4) {
+    display: flex;
+}
+
+.About,
+.Support,
+.More{
+    /* Changed: Made responsive with max dimensions */
+    height: 60px;
+    width: 150px;
+    /* width: clamp(100px, 12vw, 180px); */
+    position: relative;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     background-color: black;
-    border: 0px;
+    border-radius: 50px;
+    border: none;
+    flex-shrink: 0;
+    /* margin: 10px; */
 }
 
 .About{
-    height: 93px;
-    width: 180px;
-    top: 1px;
-    right: 765px;
-    bottom: 8px;
-    left: 495px;
-    position: absolute;
     background-image: url("cap images/Gemini_Generated_Image_ah5ysaah5ysaah5y-removebg-preview.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: black;
-    border-radius: 50px;
-    border: none;
+    padding: 0px;
+    /* margin-right: 10px; */
 }
 
 .Support{
-    height: 93px;
-    width: 180px;
-    top: 4px;
-    right: 633px;
-    bottom: 5px;
-    left: 627px;
-    position: absolute;
     background-image: url("cap images/Gemini_Generated_Image_rwcdjyrwcdjyrwcd-removebg-preview.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: black;
-    border-radius: 50px;
-    border: none;
     z-index: 1;
+    /* margin-left: 10px;
+    margin-right: 10px; */
 }
 
 .More{
-    height: 93px;
-    width: 180px;
-    top: 1px;
-    right: 491px;
-    bottom: 8px;
-    left: 769px;
-    position: absolute;
     background-image: url("cap images/Gemini_Generated_Image_52whpf52whpf52wh-removebg-preview.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: black;
-    border-radius: 50px;
-    border: none;
 }
 
 .Buy{
-    height: 56px;
-    width: 110px;
-    top: 20px;
-    right: 152px;
-    bottom: 26px;
-    left: 1178px;
-    position: absolute;
+    height: 50px;
+    width: clamp(80px, 8vw, 110px);
     border-radius: 50px;
     background-image: url("cap images/Gemini_Generated_Image_oh280yoh280yoh28-removebg-preview.png");
     background-size: cover;
@@ -101,48 +129,41 @@ body{
     background-position: center;
     background-color: black;
     border: 1px solid gold;
+    flex-shrink: 0;
 }
 
 .Search{
-    height: 67px;
-    width: 67px;
-    top: 15px;
-    right: 85px;
-    bottom: 20px;
-    left: 1288px;
-    position: absolute;
+    height: 50px;
+    width: 50px;
     background-image: url("cap images/Gemini_Generated_Image_vlchwjvlchwjvlch-removebg-preview.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-color: black;
     border: 0px;
+    flex-shrink: 0;
 }
 
 .Profile{
-    height: 67px;
-    width: 67px;
-    top: 15px;
-    right: 18px;
-    bottom: 20px;
-    left: 1355px;
-    position: absolute;
+    height: 50px;
+    width: 50px;
     background-image: url("cap images/Gemini_Generated_Image_mceivsmceivsmcei-removebg-preview.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-color: black;
     border: 0px;
+    flex-shrink: 0;
 }
 
 #search-box{
+    /* Changed: Made responsive */
     height: 85px;
-    width: 458px;
-    top: 232px;
-    right: 497px;
-    bottom: 192px;
-    left: 485px;
+    width: min(458px, 90%);
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     border-radius: 50px;
     border: none;
     padding: 20px;
@@ -151,105 +172,100 @@ body{
     color: black;
 }
 
-/* Landing Page Starts */
-
+/* ==================== LANDING PAGE - Made Responsive ==================== */
 .Landing-Page{
-    height: 904px;
-    width: 1440px;
+    /* Changed: Height responsive, width 100% with max-width */
+    min-height: 600px;
+    height: clamp(600px, 90vh, 904px);
+    width: 100%;
     background-image: url("cap images/image.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     position: relative;
     margin: 0px;
     border-radius: 40px;
+    /* Added: Padding for content */
+    padding: 20px;
 }
 
 .Now{
-    height: 77px;
-    width: 552px;
-    top:560px;
-    right: 937px;
-    bottom: 267px;
-    left:31px ;
-    font-size: 34px;
+    /* Changed: Responsive positioning and sizing */
     position: absolute;
+    bottom: 30%;
+    left: 3%;
+    max-width: 90%;
+    width: clamp(300px, 50%, 552px);
+    font-size: clamp(24px, 3vw, 34px);
     color: white;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.3;
 }
 
 .Experience{
-    height: 70px;
-    width: 460px;
-    top: 647px;
-    right: 949px;
-    bottom: 197px;
-    left: 31px;
+    /* Changed: Responsive positioning and sizing */
     position: absolute;
-    margin-top: 0px;
-    font-size: 20px;
+    bottom: 24%;
+    left: 3%;
+    max-width: 90%;
+    width: clamp(280px, 45%, 460px);
+    font-size: clamp(16px, 2vw, 20px);
     color: white;
     font-family: ch;
 }
 
 .logo2{
-    height: 103px;
-    width: 508px;
-    top: 690px;
-    right: 988px;
-    bottom: 94px;
-    left: -56px;
+    /* Changed: Responsive sizing */
+    height: clamp(60px, 10vw, 103px);
+    width: clamp(300px, 35vw, 508px);
     position: absolute;
-    margin-top: 0px;
+    bottom: 12%;
+    left: -3%;
     background-image: url("cap images/Gemini_Generated_Image_j2ln6qj2ln6qj2ln-removebg-preview.png");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: left center;
+}
+
+.Buynow,
+.Teaser{
+    /* Changed: Responsive button sizing */
+    height: clamp(45px, 5vw, 54px);
+    width: clamp(120px, 12vw, 140px);
+    border-radius: 40px;
+    position: absolute;
+    bottom: 4%;
+    opacity: 0.7;
+    border: none;
+    font-size: clamp(14px, 1.5vw, 16px);
 }
 
 .Buynow{
-    height: 54px;
-    width: 140px;
-    border-radius: 40px;
-    top: 812px;
-    right: 1253px;
-    bottom:38px;
-    left: 47px;
-    position: absolute;
-    opacity: 0.7;
-    border: none;
+    left: 3%;
 }
 
 .Teaser{
-     height: 54px;
-    width: 140px;
-    border-radius: 40px;
-    top: 812px;
-    right: 1097px;
-    bottom:38px;
-    left: 203px;
-    position: absolute;
-    opacity: 0.7;
-    border: none;
+    left: calc(3% + clamp(130px, 13vw, 160px));
 }
 
-.Buynow:hover{
-    background-color: black;
-    color: white;
-    border: 1px solid black;
-}
-
+.Buynow:hover,
 .Teaser:hover{
     background-color: black;
     color: white;
-    border: 1px solid black;
+    border: 1px solid white;
 }
 
-/* Hero Section Starts */
-
+/* ==================== HERO SECTION - Made Responsive ==================== */
 .Hero-Section{
-    height: 904px;
-    width: 1440px;
+    min-height: 600px;
+    height: clamp(600px, 90vh, 904px);
+    width: 100%;
     position: relative;
+    /* Added: Padding for content */
+    padding: 40px 5%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .Hero-Section::before {
@@ -259,83 +275,77 @@ body{
     background-image: url("cap images/_ (1).jpeg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     opacity: 0.2;
     z-index: -1; 
 }
 
-.Hero{
-    height: 324px;
-    width: 310px;
-    background-image: url("cap images/Gemini_Generated_Image_8weg0j8weg0j8weg-removebg-preview.png");
+.Hero,
+.Hero2{
+    /* Changed: Responsive sizing and positioning */
+    height: clamp(200px, 30vw, 324px);
+    width: clamp(180px, 25vw, 310px);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    opacity: 100%;
-    top: 116px;
-    right: 1020px;
-    bottom: 552px;
-    left: 110px;
     position: absolute;
+    left: 5%;
+}
+
+.Hero{
+    background-image: url("cap images/Gemini_Generated_Image_8weg0j8weg0j8weg-removebg-preview.png");
+    top: 10%;
 }
 
 .Hero2{
-    height: 324px;
-    width: 310px;
     background-image: url("cap images/Gemini_Generated_Image_8h2hy88h2hy88h2h-removebg-preview.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    top: 526px;
-    right: 1020px;
-    bottom: 142px;
-    left: 110px;
-    position: absolute;
+    bottom: 10%;
 }
 
 .logo3{
-    height: 88px;
-    width: 387px;
-    top: 116px;
-    right: 523px;
-    bottom: 788px;
-    left: 530px;
+    /* Changed: Responsive sizing */
+    height: clamp(50px, 8vw, 125px);
+    width: clamp(200px, 30vw, 387px);
+    position: absolute;
+    top: 8%;
+    right: 35%;
     background-image: url("cap images/Gemini_Generated_Image_8p8z918p8z918p8z-removebg-preview.png");
     background-size: cover;
     background-repeat: no-repeat;
-
-    position: absolute;
+    background-position: center;
 }
 
 .Hero-Section h2{
-    height: 64px;
-    width: 598px;
-    top: 227px;
-    right: 242px;
-    bottom: 701px;
-    left: 600px;
+    /* Changed: Responsive text */
     position: absolute;
+    top: 25%;
+    right: 26%;
+    max-width: 50%;
     color: white;
-    font-size: 48px;
+    font-size: clamp(28px, 4vw, 48px);
 }
 
 .Hero-Section p{
-    height: 576px;
-    width: 720px;
-    top: 301px;
-    right: 105px;
-    bottom: 115px;
-    left: 615px;
+    /* Changed: Responsive text block */
     position: absolute;
+    top: 33%;
+    right: 5%;
+    max-width: 50%;
     color: white;
-    font-size: xx-large;
+    font-size: clamp(16px, 2vw, 28px);
     font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
 }
 
-/* The Source+ Page*/
-
+/* ==================== THE SOURCE+ SECTION - Made Responsive ==================== */
 .Graphics{
-    height: 904px;
-    width: 1440px;
+    min-height: 600px;
+    height: clamp(600px, 90vh, 904px);
+    width: 100%;
     position: relative;
+    padding: 40px 5%;
+    display: flex;
+    align-items: center;
 }
 
 .Graphics::before{
@@ -345,81 +355,70 @@ body{
     background-image: url("cap images/1354199.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     opacity: 0.2;
     z-index: -1; 
 }
 
 .Imageon3{
-    height: 620px;
-    width: 496px;
-    top: 150px;
-    right: 104px;
-    bottom: 134px;
-    left: 840px;
+    /* Changed: Responsive image sizing */
+    height: clamp(400px, 60vh, 620px);
+    width: clamp(300px, 40vw, 496px);
     position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
     background-image: url("cap images/d55680214e05ab4b4abd2a97836cc4e4.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     border-radius: 30px;
 }
 
-/* .blur{
-    height: 620px;
-    width: 252px;
-    top: 150px;
-    right: 103px;
-    bottom: 134px;
-    left: 1084px;
-    background-color: black;
-    position: absolute;
-    opacity: 60%;
-} */
-
 .logo4{
-    height: 179px;
-    width: 297px;
-    top: 88px;
-    right: 1076px;
-    bottom: 637px;
-    left: 67px;
+    /* Changed: Responsive logo */
+    height: clamp(50px, 8vw, 125px);
+    width: clamp(200px, 30vw, 387px);
+    position: absolute;
+    top: 10%;
+    left: 1%;
     background-image: url("cap images/Gemini_Generated_Image_q2gkv3q2gkv3q2gk-removebg-preview.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    position: absolute;
 }
 
 .Graphics h2{
-    height: 64px;
-    width: 317px;
-    top: 251px;
-    right: 1018px;
-    bottom: 589px;
-    left: 105px;
+    /* Changed: Responsive heading */
     position: absolute;
+    top: 28%;
+    left: 4%;
+    max-width: 45%;
     color: white;
-    font-size: 48px;
+    font-size: clamp(28px, 4vw, 48px);
 }
 
 .Graphics p{
-    height: 576px;
-    width: 700px;
-    top: 325px;
-    right: 600px;
-    bottom: 3px;
-    left: 120px;
+    /* Changed: Responsive text */
     position: absolute;
+    top: 36%;
+    left: 5%;
+    max-width: 50%;
     color: white;
-    font-size: xx-large;
+    font-size: clamp(16px, 2vw, 28px);
     font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
 }
 
-/* Map Page Starts */
-
+/* ==================== MAP SECTION - Made Responsive ==================== */
 .Map{
-    height: 904px;
-    width: 1440px;
+    min-height: 600px;
+    height: clamp(600px, 90vh, 904px);
+    width: 100%;
     position: relative;
+    padding: 40px 5%;
+    display: flex;
+    align-items: center;
 }
 
 .Map::before{
@@ -429,56 +428,54 @@ body{
     background-image: url("cap images/image.png");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     opacity: 0.2;
     z-index: -1; 
 }
 
 .Imageon4{
-    height: 534px;
-    width: 480px;
-    top: 144px;
-    right: 834px;
-    bottom: 224px;
-    left: 124px;
-    background-image: url("cap images/image copy.png");
+    /* Changed: Responsive circular image */
+    height: clamp(300px, 45vw, 534px);
+    width: clamp(300px, 45vw, 480px);
     position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    background-image: url("cap images/image copy.png");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     border-radius: 50%;
 }
 
 .Map h2{
-    height: 64px;
-    width: 584px;
-    top: 168px;
-    right:234px;
-    bottom: 660px;
-    left: 620px;
+    /* Changed: Responsive heading */
     position: absolute;
+    top: 18%;
+    right: 25%;
+    max-width: 45%;
     color: white;
-    font-size: 48px;
+    font-size: clamp(28px, 4vw, 48px);
 }
 
 .Map p{
-    height: 576px;
-    width: 700px;
-    top: 243px;
-    right: 84px;
-    bottom: 83px;
-    left: 653px;
+    /* Changed: Responsive text */
     position: absolute;
+    top: 27%;
+    right: 5%;
+    max-width: 50%;
     color: white;
-    font-size: xx-large;
+    font-size: clamp(16px, 2vw, 28px);
     font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
 }
 
-
-/* Buy Section Starts */
-
+/* ==================== BUY SECTION - Made Responsive with Flexbox ==================== */
 .Buy-section{
-    height: 992px;
-    width: 1440px;
+    min-height: 600px;
+    width: 100%;
     position: relative;
+    padding: 60px 5%;
 }
 
 .Buy-section::before{
@@ -488,135 +485,162 @@ body{
     background-image: url("cap images/7632d32062dd523d9d7efedbc84f06f9.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     opacity: 0.2;
     z-index: -1;
 }
 
 .Buy-section h2{
-    height: 223px;
-    width: 223px;
-    top: 66px;
-    right: 1112px;
-    bottom: 862px;
-    left: 105px;
-    position: absolute;
+    /* Changed: Centered heading */
+    width: 100%;
+    text-align: center;
     color: white;
-    font-size: 48px;
+    font-size: clamp(32px, 5vw, 48px);
+    margin-bottom: 40px;
+}
+
+/* Changed: Added flex container for game cards */
+.Buy-section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.game1,
+.game2{
+    /* Changed: Made cards responsive with flexbox-friendly approach */
+    height: clamp(500px, 70vh, 800px);
+    width: 50%;
+    max-width: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50px;
+    position: relative;
+    margin: 20px auto;
 }
 
 .game1{
-    height: 800px;
-    width: 600px;
-    top: 144px;
-    right: 735.5px;
-    bottom: 48px;
-    left: 104.5px;
-    position: absolute;
     background-image: url("cap images/74691a13a288a5fa5d0385814f91af5d.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: 50px;
+    background-position: center;
 }
 
 .game2{
-     width: 600px;
-    top: 144px;
-    right: 104.5px;
-    bottom: 48px;
-    left: 735.5px;
-    position: absolute;
     background-image: url("cap images/009cfbc7b27dc9e282a54d745e935bc6.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: 50px;
+    background-position: center;
+}
+
+.game1:hover{
+   content: "";
+    opacity: 0.7;
+    inset: 0;
+    background-image: url("cap images/74691a13a288a5fa5d0385814f91af5d.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.game2:hover{
+    content: "";
+    opacity: 0.7;
+    inset: 0;
+    background-image: url("cap images/009cfbc7b27dc9e282a54d745e935bc6.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logo5,
+.logo6{
+    /* Changed: Responsive logo sizing */
+    height: clamp(100px, 15vw, 179px);
+    width: clamp(150px, 20vw, 297px);
+    position: absolute;
+    top: -5%;
+    left: -3%;
+    background-size: cover;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 .logo5{
-    height: 179px;
-    width: 297px;
-    top: -27px;
-    right: 303px;
-    bottom: 648px;
-    left: 0px;
-    position: absolute;
     background-image: url("cap images/Gemini_Generated_Image_8p8z918p8z918p8z-removebg-preview.png");
     background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
-    background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    background-position: center;
 }
 
 .logo6{
-    height: 179px;
-    width: 297px;
-    top: -27px;
-    right: 303px;
-    bottom: 648px;
-    left: 0px;
     background-image: url("cap images/Gemini_Generated_Image_q2gkv3q2gkv3q2gk-removebg-preview.png");
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.ps5,
+.xbox,
+.pc{
+    position: absolute;
+    bottom: 25%;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
 }
 
 .ps5{
-    height: 50px;
-    width: 91px;
-    top: 620px;
-    right: 380.5px;
-    bottom: 130px;
-    left: 128.5px;
+    /* Changed: Responsive platform icons */
+    height: clamp(30px, 5vw, 50px);
+    width: clamp(55px, 8vw, 91px);
+    left: 20%;
+    bottom: 20%;
     background-image: url("cap images/PS5-Logo-PNG-Free-Image.png");
     background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
-    position: absolute;
+    background-position: center;
 }
 
 .xbox{
-    height: 26px;
-    width: 197px;
-    top: 632px;
-    right: 183.5px;
-    bottom: 142px;
-    left: 219.5px;
+    height: clamp(20px, 3vw, 26px);
+    width: clamp(120px, 15vw, 197px);
+    left: 52%;
+    bottom: 22%;
+    transform: translateX(-50%);
     background-image: url("cap images/Screenshot_2025-11-08_at_21.05.50-removebg-preview.png");
-    background-size:cover;
-    background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
-    position: absolute;
-    
+    background-position: center;
 }
 
 .pc{
-    height: 34px;
-    width: 54px;
-    top: 628px;
-    right: 128.5px;
-    bottom: 138px;
-    left: 417.5px;
+    height: clamp(25px, 4vw, 34px);
+    width: clamp(40px, 5vw, 54px);
+    right: 23%;
+    bottom: 21.5%;
     background-image: url("cap images/Screenshot_2025-11-08_at_21.15.17-removebg-preview.png");
-    background-size:cover;
-    background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
-    position: absolute;
+    background-position: center;
 }
 
 .Platform{
-    height: 95px;
-    width: 450px;
-    top: 670px;
-    right: 77.5px;
-    bottom: 35px;
-    left: 72.5px;
-    background-color: aliceblue;
+    /* Changed: Responsive button */
+    height: clamp(60px, 8vw, 95px);
+    width: 80%;
+    max-width: 450px;
     position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 50px;
-    font-size: 32px;
+    font-size: clamp(20px, 2.5vw, 32px);
     color: white;
     border: none;
 }
@@ -624,27 +648,26 @@ body{
 .Platform:hover{
     background-color: black;
     color: white;
-    border: 1px solid black;
+    border: 1px solid white;
     opacity: 0.7;
 }
 
-/* Footer Page Starts */
-
+/* ==================== FOOTER - Made Responsive ==================== */
 .Footer{
-    height: 388px;
-    width: 1440px;
+    min-height: 300px;
+    width: 100%;
     position: relative;
     background-color: black;
+    padding: 40px 5%;
+    text-align: center;
 }
 
 .logo7{
-    height: 111px;
-    width: 401px;
-    top: 48px;
-    right: 515px;
-    bottom: 229px;      
-    left: 524px;
-    position: absolute;
+    /* Changed: Responsive footer logo */
+    height: clamp(70px, 10vw, 111px);
+    width: clamp(250px, 35vw, 401px);
+    margin: 0 auto 20px;
+    position: relative;
     background-color: black;
     background-image: url("cap images/Gemini_Generated_Image_j2ln6qj2ln6qj2ln-removebg-preview.png");
     background-size: cover;
@@ -653,93 +676,325 @@ body{
 }
 
 .strong{
-    height: 36px;
-    width: 1440px;
-    top: 159px;     
-    right: 0px;
-    bottom: 193px;
-    left: 0px;
-    font-size: 24px;
-    position: absolute;
-    text-align: center;
+    width: 100%;
+    font-size: clamp(18px, 2.5vw, 24px);
+    margin: 20px 0;
     color: white;
 }
 
 .sign{
-    height: 72px;
-    width: 1077px;
-    top: 200px;
-    right: 182px;
-    bottom: 116px;
-    left: 181px;
-    font-size: 24px;
-    position: absolute;
-    text-align: center;
+    width: 90%;
+    max-width: 1077px;
+    font-size: clamp(14px, 2vw, 24px);
+    margin: 20px auto;
     color: white;
+    line-height: 1.5;
+}
+
+/* Changed: Social media buttons container */
+.Footer .facebook,
+.Footer .linkedin,
+.Footer .twitter,
+.Footer .instagram,
+.Footer .youtube{
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    position: relative;
+    margin: 10px 8px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    border: none;
 }
 
 .facebook{
-    height: 40px;
-    width: 40px;
-    top: 293px;
-    right: 772px;
-    bottom: 55px;
-    left: 628px;
-    position: absolute;
     background-image: url("cap images/f5a0bum23hqqkb7qk2q1h1lpje.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: black;
-    border: none;
 }
 
 .linkedin{
-    height: 40px;
-    width: 40px;
-    top: 293px;
-    right: 724px;
-    bottom: 55px;
-    left: 676px;
-    position: absolute;
     background-image: url("cap images/3kft339tguuarggagqlqho6dbh.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: black;
-    border: none;
 }
+
 .twitter{
-    height: 40px;
-    width: 40px;
-    top: 293px;
-    right: 676px;
-    bottom: 55px;
-    left: 724px;
-    position: absolute;
     background-image: url("cap images/Twitter-X-White-Logo-PNG.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: black;
-    border: none;
 }
+
 .instagram{
-    height: 40px;
-    width: 40px;
-    top: 293px;
-    right: 628px;
-    bottom: 55px;
-    left: 772px;
-    position: absolute;
     background-image: url("cap images/image copy 7.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: black;
-    border: none;
 }
 
 button:hover{
     cursor: pointer;
+}
+
+/* ==================== MEDIA QUERIES - Tablet Adjustments ==================== */
+@media screen and (max-width: 1024px) {
+    body {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    
+    /* Navbar adjustments for tablets */
+    .navbar {
+        height: auto;
+        padding: 15px 2%;
+        gap: 10px;
+    }
+    
+    .About, .Support, .More {
+        height: 50px;
+        width: 120px;
+    }
+    
+    /* Adjust Hero Section for tablets */
+    .Hero-Section h2,
+    .Hero-Section p {
+        max-width: 55%;
+    }
+    
+    /* Adjust Graphics section */
+    .Graphics h2,
+    .Graphics p {
+        max-width: 52%;
+    }
+}
+
+/* ==================== MEDIA QUERIES - Small Tablets ==================== */
+@media screen and (max-width: 768px) {
+    body {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    
+    /* Stack navbar items */
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 20px;
+    }
+    
+    .logo {
+        position: relative;
+        margin-bottom: 15px;
+    }
+    
+    /* Two-column layout for sections */
+    .Hero-Section,
+    .Graphics,
+    .Map {
+        flex-direction: column;
+        padding: 30px 5%;
+        min-height: auto;
+    }
+    
+    .Hero-Section h2,
+    .Hero-Section p,
+    .Graphics h2,
+    .Graphics p,
+    .Map h2,
+    .Map p {
+        position: relative;
+        max-width: 100%;
+        margin: 20px 0;
+        top: auto;
+        right: auto;
+        left: auto;
+        bottom: auto;
+        transform: none;
+    }
+    
+    .Hero,
+    .Hero2,
+    .Imageon3,
+    .Imageon4,
+    .logo3,
+    .logo4 {
+        position: relative;
+        margin: 20px auto;
+        top: auto;
+        right: auto;
+        left: auto;
+        bottom: auto;
+        transform: none;
+    }
+    
+    /* Stack game cards on tablets */
+    .game1,
+    .game2 {
+        float: none;
+        margin: 20px auto;
+    }
+}
+
+/* ==================== MEDIA QUERIES - Mobile Devices ==================== */
+@media screen and (max-width: 480px) {
+    body {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    /* Mobile navbar - simplified */
+    .navbar {
+        padding: 10px;
+        gap: 10px;
+    }
+    
+    .logo {
+        width: 200px;
+        height: 60px;
+    }
+    
+    .About, .Support, .More {
+        width: 80px;
+        height: 40px;
+        font-size: 12px;
+    }
+    
+    .Buy, .Search, .Profile {
+        height: 40px;
+        width: 40px;
+    }
+    
+    /* Landing page mobile adjustments */
+    .Landing-Page {
+        border-radius: 20px;
+        padding: 15px;
+    }
+    
+    .Now {
+        bottom: 35%;
+        font-size: 20px;
+    }
+    
+    .Experience {
+        bottom: 25%;
+        font-size: 14px;
+    }
+    
+    .logo2 {
+        bottom: 16%;
+        width: 250px;
+    }
+    
+    .Buynow,
+    .Teaser {
+        width: 100px;
+        height: 40px;
+        font-size: 12px;
+    }
+    
+    .Teaser {
+        left: calc(3% + 110px);
+    }
+    
+    /* Mobile section adjustments */
+    .Hero-Section,
+    .Graphics,
+    .Map {
+        padding: 20px 3%;
+    }
+    
+    /* Reduce text sizes for mobile */
+    .Hero-Section h2,
+    .Graphics h2,
+    .Map h2 {
+        font-size: 24px;
+        margin: 15px 0;
+    }
+    
+    .Hero-Section p,
+    .Graphics p,
+    .Map p {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+    
+    /* Images full width on mobile */
+    .Hero,
+    .Hero2,
+    .Imageon3,
+    .Imageon4 {
+        width: 90%;
+        height: auto;
+        aspect-ratio: 1;
+    }
+    
+    /* Buy section mobile */
+    .Buy-section h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    
+    .game1,
+    .game2 {
+        height: 500px;
+        border-radius: 30px;
+    }
+    
+    .Platform {
+        font-size: 18px;
+        height: 50px;
+    }
+    
+    /* Footer mobile */
+    .Footer {
+        padding: 30px 5%;
+    }
+    
+    .logo7 {
+        width: 200px;
+        height: 60px;
+    }
+    
+    .strong {
+        font-size: 16px;
+    }
+    
+    .sign {
+        font-size: 12px;
+        width: 95%;
+    }
+    
+    .Footer button {
+        height: 35px;
+        width: 35px;
+        margin: 8px 5px;
+    }
+}
+
+/* ==================== MEDIA QUERIES - Very Small Devices ==================== */
+@media screen and (max-width: 360px) {
+    /* Ultra-compact layout for very small screens */
+    .navbar {
+        gap: 5px;
+    }
+    
+    .About, .Support, .More {
+        width: 70px;
+        height: 35px;
+    }
+    
+    .Landing-Page {
+        min-height: 500px;
+    }
+    
+    .Now {
+        font-size: 18px;
+        width: 95%;
+    }
+    
+    .Experience {
+        font-size: 12px;
+        width: 95%;
+    }
+    
+    .Buynow,
+    .Teaser {
+        width: 90px;
+        height: 35px;
+        font-size: 11px;
+    }
 }
