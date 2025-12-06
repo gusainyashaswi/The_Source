@@ -7,13 +7,11 @@
     <link rel="stylesheet" href="./PAGE1.css">
     
     <style>
-        /* ========== CSS FOR SEARCH BOX ========== */
-        
-        /* Container for search box and suggestions */
+
         #searchContainer {
-            display: none;  /* Hidden by default */
+            display: none; 
             position: absolute;
-            top: 110px;  /* Below navbar */
+            top: 110px;
             left: 50%;
             transform: translateX(-50%);
             width: 90%;
@@ -26,7 +24,6 @@
             box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
         }
         
-        /* Search input field */
         #searchInput {
             width: 100%;
             padding: 15px;
@@ -46,13 +43,11 @@
             border-color: gold;
         }
         
-        /* Container for suggestions */
         #suggestionsBox {
             margin-top: 10px;
-            display: none;  /* Hidden until user types */
+            display: none; 
         }
         
-        /* Individual suggestion items */
         .suggestion-item {
             padding: 12px 15px;
             background-color: #2d2d2d;
@@ -69,7 +64,7 @@
             transform: translateX(5px);
         }
         
-        /* Close button */
+
         #closeSearch {
             position: absolute;
             top: 10px;
@@ -98,13 +93,12 @@
         </div>
         <div class="d">
         <a class="buy" href="#buy-section"><button class="Buy"></button></a>
-        <!-- CHANGED: Added id to Search button -->
+        
         <a href="#"><button class="Search" id="searchBtn"></button></a>
         <a href="./Profile.html"><button class="Profile"></button></a>
         </div>
     </div>
 
-    <!-- NEW: Search Container (hidden by default) -->
     <div id="searchContainer">
         <button id="closeSearch">×</button>
         <input type="text" id="searchInput" placeholder="Search for games, platforms, info...">
@@ -174,7 +168,6 @@
         <button class="youtube"></button>
     </div>
 
-    <!-- ========== SIMPLE SEARCH BOX JAVASCRIPT ========== -->
 <script src="./Page1.js"></script>
 
 </body>

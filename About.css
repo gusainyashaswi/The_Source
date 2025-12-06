@@ -10,7 +10,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* Changed: Made margins responsive using percentage and max-width */
+    
     margin-left: 5%;
     margin-right: 5%;
     max-width: 1600px;
@@ -18,29 +18,29 @@ body{
     margin-right: auto;
 }
 
-/* ==================== NAVBAR - Made Fully Responsive ==================== */
+
 .navbar{
     height: 102px;
     width: 100%;
     background-color: black;
-    /* Removed: Fixed margin-left */
+    
     position: relative;
     display: flex;
-    /* align-items: center; */
+    
     justify-content: space-between;
-    /* padding: 0px 2%; */
+    
     flex-wrap: wrap;
-    /* Added: Prevent overflow */
+    
     overflow: hidden;
 }
 
 .logo{
-    /* Changed: Made dimensions responsive */
+    
     height: 100px;
     width: clamp(391px, 25vw, 391px);
     width: 300px;
     position: relative;
-    /* Removed: Fixed positioning values */
+    
     background-image: url("cap images/Gemini_Generated_Image_j2ln6qj2ln6qj2ln-removebg-preview.png");
 
     background-size: cover;
@@ -65,12 +65,12 @@ body{
     height: 102px;
     justify-content: center;
     align-items: center;
-    /* gap: -100px; */
+    
     margin-right: 50px;
 
 }
 
-/* Changed: Navigation buttons to use relative positioning and flexbox */
+
 .navbar a:nth-child(2),
 .navbar a:nth-child(3),
 .navbar a:nth-child(4) {
@@ -80,10 +80,10 @@ body{
 .About,
 .Support,
 .More{
-    /* Changed: Made responsive with max dimensions */
+    
     height: 60px;
     width: 150px;
-    /* width: clamp(100px, 12vw, 180px); */
+    
     position: relative;
     background-size: contain;
     background-repeat: no-repeat;
@@ -92,7 +92,7 @@ body{
     border-radius: 50px;
     border: none;
     flex-shrink: 0;
-    /* margin: 10px; */
+    
 }
 
 .About{
@@ -101,7 +101,7 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     padding: 0px;
-    /* margin-right: 10px; */
+    
 }
 
 .Support{
@@ -110,8 +110,7 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     z-index: 1;
-    /* margin-left: 10px;
-    margin-right: 10px; */
+    
 }
 
 .More{
@@ -159,7 +158,7 @@ body{
 }
 
 #search-box{
-    /* Changed: Made responsive */
+    
     height: 85px;
     width: min(458px, 90%);
     position: absolute;
@@ -174,9 +173,9 @@ body{
     color: black;
 }
 
-/* ==================== SECTION 1 - Hero Section ==================== */
+
 .sec1{
-    /* Changed: Made responsive height and width */
+    
     min-height: 500px;
     height: clamp(500px, 70vh, 743px);
     width: 100%;
@@ -186,7 +185,7 @@ body{
     background-position: center;
     position: relative;
     border-radius: 30px;
-    /* Added: Padding for content spacing */
+    
     padding: 30px;
     display: flex;
     align-items: flex-start;
@@ -194,7 +193,7 @@ body{
 }
 
 .sec1 h2{
-    /* Changed: Made heading responsive */
+    
     color: white;
     font-size: clamp(48px, 8vw, 96px);
     position: relative;
@@ -204,16 +203,16 @@ body{
     max-width: 90%;
 }
 
-/* ==================== SECTION 2 - The Idea Section ==================== */
+
 .sec2{
-    /* Changed: Made responsive dimensions */
+    
     min-height: 600px;
     width: 100%;
     height: clamp(600px, 90vh, 904px);
     position: relative;
-    /* Added: Padding for content */
+    
     padding: 40px 5%;
-    /* margin-bottom: 20px; */
+    
 }
 
 .sec2::before{
@@ -229,7 +228,7 @@ body{
 }
 
 .sec2 h2{
-    /* Changed: Responsive heading */
+    
     width: 100%;
     font-size: clamp(36px, 7vw, 96px);
     position: relative;
@@ -239,7 +238,7 @@ body{
 }
 
 .sec2 p{
-    /* Changed: Responsive paragraph */
+    
     width: 100%;
     max-width: 1360px;
     color: white;
@@ -249,20 +248,20 @@ body{
     line-height: 1.6;
 }
 
-/* ==================== SECTION 3 - Team Section ==================== */
+
 .sec3{
-    /* Changed: Made responsive */
+    
     min-height: 700px;
     height: auto;
     width: 100%;
     position: relative;
-    /* Added: Padding and centering */
+    
     padding: 50px 5%;
     margin-bottom: 20px;
 }
 
 .sec3 h1{
-    /* Changed: Responsive main heading */
+    
     width: 100%;
     font-size: clamp(36px, 7vw, 96px);
     color: white;
@@ -271,7 +270,7 @@ body{
     margin-bottom: 50px;
 }
 
-/* Changed: Made team member listings responsive with consistent spacing */
+
 .sec3 h4 {
     width: 100%;
     max-width: 1124px;
@@ -378,7 +377,7 @@ body{
     font-size: clamp(23px, 3.2vw, 37px);
 }
 
-/* ==================== FOOTER - Made Responsive ==================== */
+
 .Footer{
     min-height: 300px;
     width: 100%;
@@ -389,7 +388,7 @@ body{
 }
 
 .logo7{
-    /* Changed: Responsive footer logo */
+    
     height: clamp(70px, 10vw, 111px);
     width: clamp(250px, 35vw, 401px);
     margin: 0 auto 20px;
@@ -417,7 +416,7 @@ body{
     line-height: 1.5;
 }
 
-/* Changed: Social media buttons container */
+
 .Footer .facebook,
 .Footer .linkedin,
 .Footer .twitter,
@@ -456,14 +455,14 @@ button:hover{
 }
 
 
-/* ==================== MEDIA QUERIES - Tablet Adjustments ==================== */
+
 @media screen and (max-width: 1024px) {
     body {
         margin-left: 3%;
         margin-right: 3%;
     }
     
-    /* Navbar adjustments */
+    
     .navbar {
         height: auto;
         padding: 15px 2%;
@@ -475,7 +474,7 @@ button:hover{
         width: 120px;
     }
     
-    /* Section adjustments */
+    
     .sec1 {
         padding: 25px;
     }
@@ -486,14 +485,14 @@ button:hover{
     }
 }
 
-/* ==================== MEDIA QUERIES - Small Tablets ==================== */
+
 @media screen and (max-width: 768px) {
     body {
         margin-left: 2%;
         margin-right: 2%;
     }
     
-    /* Stack navbar items */
+    
     .navbar {
         flex-direction: column;
         align-items: center;
@@ -506,7 +505,7 @@ button:hover{
         margin-bottom: 15px;
     }
     
-    /* Section 1 adjustments */
+    
     .sec1 {
         border-radius: 20px;
         padding: 20px;
@@ -517,7 +516,7 @@ button:hover{
         font-size: clamp(36px, 10vw, 72px);
     }
     
-    /* Section 2 adjustments */
+    
     .sec2 {
         padding: 35px 5%;
     }
@@ -530,7 +529,7 @@ button:hover{
         font-size: clamp(16px, 3vw, 28px);
     }
     
-    /* Section 3 team list */
+    
     .sec3 {
         padding: 40px 5%;
     }
@@ -545,14 +544,14 @@ button:hover{
     }
 }
 
-/* ==================== MEDIA QUERIES - Mobile Devices ==================== */
+
 @media screen and (max-width: 480px) {
     body {
         margin-left: 0;
         margin-right: 0;
     }
     
-    /* Mobile navbar */
+    
     .navbar {
         padding: 10px;
         gap: 10px;
@@ -573,7 +572,7 @@ button:hover{
         width: 40px;
     }
     
-    /* Section 1 mobile */
+    
     .sec1 {
         min-height: 350px;
         padding: 20px 15px;
@@ -585,7 +584,7 @@ button:hover{
         line-height: 1.3;
     }
     
-    /* Section 2 mobile */
+    
     .sec2 {
         padding: 30px 4%;
         min-height: auto;
@@ -601,7 +600,7 @@ button:hover{
         line-height: 1.5;
     }
     
-    /* Section 3 mobile */
+    
     .sec3 {
         padding: 30px 4%;
     }
@@ -617,7 +616,7 @@ button:hover{
         padding: 6px 0;
     }
     
-    /* Adjust hover effects for mobile */
+
     .a:hover,
     .c:hover,
     .e:hover,
@@ -634,7 +633,7 @@ button:hover{
         font-size: 19px;
     }
     
-    /* Footer mobile */
+
     .Footer {
         padding: 30px 5%;
     }
@@ -660,9 +659,9 @@ button:hover{
     }
 }
 
-/* ==================== MEDIA QUERIES - Very Small Devices ==================== */
+
 @media screen and (max-width: 360px) {
-    /* Ultra-compact layout */
+
     .navbar {
         gap: 5px;
     }
@@ -706,9 +705,8 @@ button:hover{
     }
 }
 
-/* ==================== LANDSCAPE MODE ADJUSTMENTS ==================== */
+
 @media screen and (max-height: 600px) and (orientation: landscape) {
-    /* Adjust heights for landscape mode on mobile devices */
     .sec1 {
         min-height: 400px;
     }
@@ -724,9 +722,8 @@ button:hover{
     }
 }
 
-/* ==================== SECTION 1 - Hero Section ==================== */
+
 .sec1{
-    /* Changed: Made responsive height and width */
     min-height: 500px;
     height: clamp(500px, 70vh, 743px);
     width: 100%;
@@ -736,7 +733,6 @@ button:hover{
     background-position: center;
     position: relative;
     border-radius: 30px;
-    /* Added: Padding for content spacing */
     padding: 30px;
     display: flex;
     align-items: flex-start;
@@ -744,7 +740,6 @@ button:hover{
 }
 
 .sec1 h2{
-    /* Changed: Made heading responsive */
     color: white;
     font-size: clamp(48px, 8vw, 96px);
     position: relative;
@@ -754,14 +749,12 @@ button:hover{
     max-width: 90%;
 }
 
-/* ==================== SECTION 2 - The Idea Section ==================== */
+
 .sec2{
-    /* Changed: Made responsive dimensions */
     min-height: 600px;
     height: auto;
     width: 100%;
     position: relative;
-    /* Added: Padding for content */
     padding: 50px 5%;
     margin-bottom: 20px;
 }
@@ -779,7 +772,7 @@ button:hover{
 }
 
 .sec2 h2{
-    /* Changed: Responsive heading */
+
     width: 100%;
     font-size: clamp(36px, 7vw, 96px);
     position: relative;
@@ -789,7 +782,7 @@ button:hover{
 }
 
 .sec2 p{
-    /* Changed: Responsive paragraph */
+
     width: 100%;
     max-width: 1260px;
     color: white;
@@ -799,20 +792,18 @@ button:hover{
     line-height: 1.6;
 }
 
-/* ==================== SECTION 3 - Team Section ==================== */
+
 .sec3{
-    /* Changed: Made responsive */
+
     min-height: 700px;
     height: auto;
     width: 100%;
     position: relative;
-    /* Added: Padding and centering */
     padding: 50px 5%;
     margin-bottom: 20px;
 }
 
 .sec3 h1{
-    /* Changed: Responsive main heading */
     width: 100%;
     font-size: clamp(36px, 7vw, 96px);
     color: white;
@@ -821,7 +812,6 @@ button:hover{
     margin-bottom: 50px;
 }
 
-/* Changed: Made team member listings responsive with consistent spacing */
 .sec3 h4 {
     width: 100%;
     max-width: 1124px;
@@ -924,7 +914,7 @@ button:hover{
     font-size: clamp(23px, 3.2vw, 37px);
 }
 
-/* ==================== FOOTER - Made Responsive ==================== */
+
 .Footer{
     min-height: 300px;
     width: 100%;
@@ -935,7 +925,7 @@ button:hover{
 }
 
 .logo7{
-    /* Changed: Responsive footer logo */
+
     height: clamp(70px, 10vw, 111px);
     width: clamp(250px, 35vw, 401px);
     margin: 0 auto 20px;
@@ -963,7 +953,7 @@ button:hover{
     line-height: 1.5;
 }
 
-/* Changed: Social media buttons to inline display */
+
 .Footer .facebook,
 .Footer .linkedin,
 .Footer .twitter,
@@ -1001,14 +991,13 @@ button:hover{
     cursor: pointer;
 }
 
-/* ==================== MEDIA QUERIES - Tablet Adjustments ==================== */
+
 @media screen and (max-width: 1024px) {
     body {
         margin-left: 3%;
         margin-right: 3%;
     }
     
-    /* Navbar adjustments */
     .navbar {
         height: auto;
         padding: 15px 2%;
@@ -1020,7 +1009,7 @@ button:hover{
         width: 120px;
     }
     
-    /* Section adjustments */
+
     .sec1 {
         padding: 25px;
     }
@@ -1031,14 +1020,14 @@ button:hover{
     }
 }
 
-/* ==================== MEDIA QUERIES - Small Tablets ==================== */
+
 @media screen and (max-width: 768px) {
     body {
         margin-left: 2%;
         margin-right: 2%;
     }
     
-    /* Stack navbar items */
+
     .navbar {
         flex-direction: column;
         align-items: center;
@@ -1051,7 +1040,7 @@ button:hover{
         margin-bottom: 15px;
     }
     
-    /* Section 1 adjustments */
+
     .sec1 {
         border-radius: 20px;
         padding: 20px;
@@ -1062,7 +1051,7 @@ button:hover{
         font-size: clamp(36px, 10vw, 72px);
     }
     
-    /* Section 2 adjustments */
+ 
     .sec2 {
         padding: 35px 5%;
     }
@@ -1075,7 +1064,7 @@ button:hover{
         font-size: clamp(16px, 3vw, 28px);
     }
     
-    /* Section 3 team list */
+
     .sec3 {
         padding: 40px 5%;
     }
@@ -1090,14 +1079,14 @@ button:hover{
     }
 }
 
-/* ==================== MEDIA QUERIES - Mobile Devices ==================== */
+
 @media screen and (max-width: 480px) {
     body {
         margin-left: 0;
         margin-right: 0;
     }
     
-    /* Mobile navbar */
+
     .navbar {
         padding: 10px;
         gap: 10px;
@@ -1118,7 +1107,7 @@ button:hover{
         width: 40px;
     }
     
-    /* Section 1 mobile */
+
     .sec1 {
         min-height: 350px;
         padding: 20px 15px;
@@ -1130,7 +1119,7 @@ button:hover{
         line-height: 1.3;
     }
     
-    /* Section 2 mobile */
+    
     .sec2 {
         padding: 30px 4%;
         min-height: auto;
@@ -1146,7 +1135,7 @@ button:hover{
         line-height: 1.5;
     }
     
-    /* Section 3 mobile */
+    
     .sec3 {
         padding: 30px 4%;
     }
@@ -1162,7 +1151,6 @@ button:hover{
         padding: 6px 0;
     }
     
-    /* Adjust hover effects for mobile */
     .a:hover,
     .c:hover,
     .e:hover,
@@ -1179,7 +1167,7 @@ button:hover{
         font-size: 19px;
     }
     
-    /* Footer mobile */
+
     .Footer {
         padding: 30px 5%;
     }
@@ -1205,9 +1193,9 @@ button:hover{
     }
 }
 
-/* ==================== MEDIA QUERIES - Very Small Devices ==================== */
+
 @media screen and (max-width: 360px) {
-    /* Ultra-compact layout */
+    
     .navbar {
         gap: 5px;
     }
@@ -1251,9 +1239,9 @@ button:hover{
     }
 }
 
-/* ==================== LANDSCAPE MODE ADJUSTMENTS ==================== */
+
 @media screen and (max-height: 600px) and (orientation: landscape) {
-    /* Adjust heights for landscape mode on mobile devices */
+   
     .sec1 {
         min-height: 400px;
     }

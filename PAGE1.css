@@ -10,7 +10,6 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* Changed: Made margins responsive using percentage and max-width */
     margin-left: 5%;
     margin-right: 5%;
     max-width: 1600px;
@@ -18,29 +17,29 @@ body{
     margin-right: auto;
 }
 
-/* ==================== NAVBAR - Made Fully Responsive ==================== */
+
 .navbar{
     height: 102px;
     width: 100%;
     background-color: black;
-    /* Removed: Fixed margin-left */
+    
     position: relative;
     display: flex;
-    /* align-items: center; */
+    
     justify-content: space-between;
-    /* padding: 0px 2%; */
+    
     flex-wrap: wrap;
-    /* Added: Prevent overflow */
+    
     overflow: hidden;
 }
 
 .logo{
-    /* Changed: Made dimensions responsive */
+    
     height: 100px;
     width: clamp(391px, 25vw, 391px);
     width: 300px;
     position: relative;
-    /* Removed: Fixed positioning values */
+    
     background-image: url("cap images/Gemini_Generated_Image_j2ln6qj2ln6qj2ln-removebg-preview.png");
 
     background-size: cover;
@@ -63,12 +62,12 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* gap: -100px; */
+    
     margin-right: 50px;
 
 }
 
-/* Changed: Navigation buttons to use relative positioning and flexbox */
+
 .navbar a:nth-child(2),
 .navbar a:nth-child(3),
 .navbar a:nth-child(4) {
@@ -78,10 +77,10 @@ body{
 .About,
 .Support,
 .More{
-    /* Changed: Made responsive with max dimensions */
+    
     height: 60px;
     width: 150px;
-    /* width: clamp(100px, 12vw, 180px); */
+    
     position: relative;
     background-size: contain;
     background-repeat: no-repeat;
@@ -90,7 +89,7 @@ body{
     border-radius: 50px;
     border: none;
     flex-shrink: 0;
-    /* margin: 10px; */
+    
 }
 
 .About{
@@ -99,7 +98,7 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     padding: 0px;
-    /* margin-right: 10px; */
+    
 }
 
 .Support{
@@ -108,8 +107,7 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     z-index: 1;
-    /* margin-left: 10px;
-    margin-right: 10px; */
+    
 }
 
 .More{
@@ -160,7 +158,6 @@ html{
 }
 
 #search-box{
-    /* Changed: Made responsive */
     height: 85px;
     width: min(458px, 90%);
     position: absolute;
@@ -175,9 +172,8 @@ html{
     color: black;
 }
 
-/* ==================== LANDING PAGE - Made Responsive ==================== */
+
 .Landing-Page{
-    /* Changed: Height responsive, width 100% with max-width */
     min-height: 600px;
     height: clamp(600px, 90vh, 904px);
     width: 100%;
@@ -188,12 +184,10 @@ html{
     position: relative;
     margin: 0px;
     border-radius: 40px;
-    /* Added: Padding for content */
     padding: 20px;
 }
 
 .Now{
-    /* Changed: Responsive positioning and sizing */
     position: absolute;
     bottom: 30%;
     left: 3%;
@@ -206,7 +200,6 @@ html{
 }
 
 .Experience{
-    /* Changed: Responsive positioning and sizing */
     position: absolute;
     bottom: 24%;
     left: 3%;
@@ -218,7 +211,7 @@ html{
 }
 
 .logo2{
-    /* Changed: Responsive sizing */
+    
     height: clamp(60px, 10vw, 103px);
     width: clamp(300px, 35vw, 508px);
     position: absolute;
@@ -232,7 +225,7 @@ html{
 
 .Buynow,
 .Teaser{
-    /* Changed: Responsive button sizing */
+    
     height: clamp(45px, 5vw, 54px);
     width: clamp(120px, 12vw, 140px);
     border-radius: 40px;
@@ -258,13 +251,13 @@ html{
     border: 1px solid white;
 }
 
-/* ==================== HERO SECTION - Made Responsive ==================== */
+
 .Hero-Section{
     min-height: 600px;
     height: clamp(600px, 90vh, 904px);
     width: 100%;
     position: relative;
-    /* Added: Padding for content */
+    
     padding: 40px 5%;
     display: flex;
     flex-wrap: wrap;
@@ -285,7 +278,7 @@ html{
 
 .Hero,
 .Hero2{
-    /* Changed: Responsive sizing and positioning */
+    
     height: clamp(200px, 30vw, 324px);
     width: clamp(180px, 25vw, 310px);
     background-size: cover;
@@ -306,7 +299,7 @@ html{
 }
 
 .logo3{
-    /* Changed: Responsive sizing */
+    
     height: clamp(50px, 8vw, 125px);
     width: clamp(200px, 30vw, 387px);
     position: absolute;
@@ -319,7 +312,7 @@ html{
 }
 
 .Hero-Section h2{
-    /* Changed: Responsive text */
+    
     position: absolute;
     top: 25%;
     right: 26%;
@@ -329,7 +322,7 @@ html{
 }
 
 .Hero-Section p{
-    /* Changed: Responsive text block */
+    
     position: absolute;
     top: 33%;
     right: 5%;
@@ -340,7 +333,7 @@ html{
     line-height: 1.5;
 }
 
-/* ==================== THE SOURCE+ SECTION - Made Responsive ==================== */
+
 .Graphics{
     min-height: 600px;
     height: clamp(600px, 90vh, 904px);
@@ -364,7 +357,7 @@ html{
 }
 
 .Imageon3{
-    /* Changed: Responsive image sizing */
+    
     height: clamp(400px, 60vh, 620px);
     width: clamp(300px, 40vw, 496px);
     position: absolute;
@@ -379,7 +372,7 @@ html{
 }
 
 .logo4{
-    /* Changed: Responsive logo */
+    
     height: clamp(50px, 8vw, 125px);
     width: clamp(200px, 30vw, 387px);
     position: absolute;
@@ -392,7 +385,7 @@ html{
 }
 
 .Graphics h2{
-    /* Changed: Responsive heading */
+    
     position: absolute;
     top: 28%;
     left: 4%;
@@ -402,7 +395,7 @@ html{
 }
 
 .Graphics p{
-    /* Changed: Responsive text */
+    
     position: absolute;
     top: 36%;
     left: 5%;
@@ -413,7 +406,7 @@ html{
     line-height: 1.5;
 }
 
-/* ==================== MAP SECTION - Made Responsive ==================== */
+
 .Map{
     min-height: 600px;
     height: clamp(600px, 90vh, 904px);
@@ -437,7 +430,7 @@ html{
 }
 
 .Imageon4{
-    /* Changed: Responsive circular image */
+    
     height: clamp(300px, 45vw, 534px);
     width: clamp(300px, 45vw, 480px);
     position: absolute;
@@ -452,7 +445,7 @@ html{
 }
 
 .Map h2{
-    /* Changed: Responsive heading */
+    
     position: absolute;
     top: 18%;
     right: 25%;
@@ -462,7 +455,7 @@ html{
 }
 
 .Map p{
-    /* Changed: Responsive text */
+    
     position: absolute;
     top: 27%;
     right: 5%;
@@ -473,7 +466,7 @@ html{
     line-height: 1.5;
 }
 
-/* ==================== BUY SECTION - Made Responsive with Flexbox ==================== */
+
 .Buy-section{
     min-height: 600px;
     width: 100%;
@@ -494,7 +487,7 @@ html{
 }
 
 .Buy-section h2{
-    /* Changed: Centered heading */
+    
     width: 100%;
     text-align: center;
     color: white;
@@ -502,7 +495,7 @@ html{
     margin-bottom: 40px;
 }
 
-/* Changed: Added flex container for game cards */
+
 .Buy-section::after {
     content: "";
     display: table;
@@ -511,7 +504,7 @@ html{
 
 .game1,
 .game2{
-    /* Changed: Made cards responsive with flexbox-friendly approach */
+    
     height: clamp(500px, 70vh, 800px);
     width: 50%;
     max-width: 600px;
@@ -559,7 +552,7 @@ html{
 
 .logo5,
 .logo6{
-    /* Changed: Responsive logo sizing */
+    
     height: clamp(100px, 15vw, 179px);
     width: clamp(150px, 20vw, 297px);
     position: absolute;
@@ -598,7 +591,7 @@ html{
 }
 
 .ps5{
-    /* Changed: Responsive platform icons */
+    
     height: clamp(30px, 5vw, 50px);
     width: clamp(55px, 8vw, 91px);
     left: 20%;
@@ -633,7 +626,7 @@ html{
 }
 
 .Platform{
-    /* Changed: Responsive button */
+    
     height: clamp(60px, 8vw, 95px);
     width: 80%;
     max-width: 450px;
@@ -655,7 +648,7 @@ html{
     opacity: 0.7;
 }
 
-/* ==================== FOOTER - Made Responsive ==================== */
+
 .Footer{
     min-height: 300px;
     width: 100%;
@@ -666,7 +659,7 @@ html{
 }
 
 .logo7{
-    /* Changed: Responsive footer logo */
+    
     height: clamp(70px, 10vw, 111px);
     width: clamp(250px, 35vw, 401px);
     margin: 0 auto 20px;
@@ -694,7 +687,7 @@ html{
     line-height: 1.5;
 }
 
-/* Changed: Social media buttons container */
+
 .Footer .facebook,
 .Footer .linkedin,
 .Footer .twitter,
@@ -732,14 +725,14 @@ button:hover{
     cursor: pointer;
 }
 
-/* ==================== MEDIA QUERIES - Tablet Adjustments ==================== */
+
 @media screen and (max-width: 1024px) {
     body {
         margin-left: 3%;
         margin-right: 3%;
     }
     
-    /* Navbar adjustments for tablets */
+    
     .navbar {
         height: auto;
         padding: 15px 2%;
@@ -751,27 +744,27 @@ button:hover{
         width: 120px;
     }
     
-    /* Adjust Hero Section for tablets */
+    
     .Hero-Section h2,
     .Hero-Section p {
         max-width: 55%;
     }
     
-    /* Adjust Graphics section */
+    
     .Graphics h2,
     .Graphics p {
         max-width: 52%;
     }
 }
 
-/* ==================== MEDIA QUERIES - Small Tablets ==================== */
+
 @media screen and (max-width: 768px) {
     body {
         margin-left: 2%;
         margin-right: 2%;
     }
     
-    /* Stack navbar items */
+    
     .navbar {
         flex-direction: column;
         align-items: center;
@@ -784,7 +777,7 @@ button:hover{
         margin-bottom: 15px;
     }
     
-    /* Two-column layout for sections */
+    
     .Hero-Section,
     .Graphics,
     .Map {
@@ -824,7 +817,7 @@ button:hover{
         transform: none;
     }
     
-    /* Stack game cards on tablets */
+    
     .game1,
     .game2 {
         float: none;
@@ -832,14 +825,14 @@ button:hover{
     }
 }
 
-/* ==================== MEDIA QUERIES - Mobile Devices ==================== */
+
 @media screen and (max-width: 480px) {
     body {
         margin-left: 0;
         margin-right: 0;
     }
     
-    /* Mobile navbar - simplified */
+    
     .navbar {
         padding: 10px;
         gap: 10px;
@@ -861,7 +854,7 @@ button:hover{
         width: 40px;
     }
     
-    /* Landing page mobile adjustments */
+    
     .Landing-Page {
         border-radius: 20px;
         padding: 15px;
@@ -893,14 +886,14 @@ button:hover{
         left: calc(3% + 110px);
     }
     
-    /* Mobile section adjustments */
+    
     .Hero-Section,
     .Graphics,
     .Map {
         padding: 20px 3%;
     }
     
-    /* Reduce text sizes for mobile */
+    
     .Hero-Section h2,
     .Graphics h2,
     .Map h2 {
@@ -915,7 +908,7 @@ button:hover{
         line-height: 1.4;
     }
     
-    /* Images full width on mobile */
+    
     .Hero,
     .Hero2,
     .Imageon3,
@@ -925,7 +918,7 @@ button:hover{
         aspect-ratio: 1;
     }
     
-    /* Buy section mobile */
+    
     .Buy-section h2 {
         font-size: 28px;
         margin-bottom: 20px;
@@ -942,7 +935,7 @@ button:hover{
         height: 50px;
     }
     
-    /* Footer mobile */
+    
     .Footer {
         padding: 30px 5%;
     }
@@ -968,9 +961,9 @@ button:hover{
     }
 }
 
-/* ==================== MEDIA QUERIES - Very Small Devices ==================== */
+
 @media screen and (max-width: 360px) {
-    /* Ultra-compact layout for very small screens */
+    
     .navbar {
         gap: 5px;
     }

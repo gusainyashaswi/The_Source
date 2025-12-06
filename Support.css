@@ -10,7 +10,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* Changed: Made margins responsive using percentage and max-width */
+    
     margin-left: 5%;
     margin-right: 5%;
     max-width: 1600px;
@@ -18,29 +18,29 @@ body{
     margin-right: auto;
 }
 
-/* ==================== NAVBAR - Made Fully Responsive ==================== */
+
 .navbar{
     height: 102px;
     width: 100%;
     background-color: black;
-    /* Removed: Fixed margin-left */
+    
     position: relative;
     display: flex;
-    /* align-items: center; */
+    
     justify-content: space-between;
-    /* padding: 0px 2%; */
+    
     flex-wrap: wrap;
-    /* Added: Prevent overflow */
+    
     overflow: hidden;
 }
 
 .logo{
-    /* Changed: Made dimensions responsive */
+    
     height: 100px;
     width: clamp(391px, 25vw, 391px);
     width: 300px;
     position: relative;
-    /* Removed: Fixed positioning values */
+    
     background-image: url("cap images/Gemini_Generated_Image_j2ln6qj2ln6qj2ln-removebg-preview.png");
 
     background-size: cover;
@@ -65,12 +65,12 @@ body{
     height: 102px;
     justify-content: center;
     align-items: center;
-    /* gap: -100px; */
+    
     margin-right: 50px;
 
 }
 
-/* Changed: Navigation buttons to use relative positioning and flexbox */
+
 .navbar a:nth-child(2),
 .navbar a:nth-child(3),
 .navbar a:nth-child(4) {
@@ -80,10 +80,10 @@ body{
 .About,
 .Support,
 .More{
-    /* Changed: Made responsive with max dimensions */
+    
     height: 60px;
     width: 150px;
-    /* width: clamp(100px, 12vw, 180px); */
+    
     position: relative;
     background-size: contain;
     background-repeat: no-repeat;
@@ -92,7 +92,7 @@ body{
     border-radius: 50px;
     border: none;
     flex-shrink: 0;
-    /* margin: 10px; */
+    
 }
 
 .About{
@@ -101,7 +101,7 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     padding: 0px;
-    /* margin-right: 10px; */
+    
 }
 
 .Support{
@@ -110,8 +110,7 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     z-index: 1;
-    /* margin-left: 10px;
-    margin-right: 10px; */
+    
 }
 
 .More{
@@ -159,7 +158,7 @@ body{
 }
 
 #search-box{
-    /* Changed: Made responsive */
+    
     height: 85px;
     width: min(458px, 90%);
     position: absolute;
@@ -174,19 +173,19 @@ body{
     color: black;
 }
 
-/* ==================== SECTION 1 - Hero with Search ==================== */
+
 .sec1{
-    /* Changed: Made section responsive with clamp() for height */
+    
     min-height: 400px;
     height: clamp(400px, 50vh, 509px);
-    width: 100%; /* Changed: From fixed 1440px to 100% */
+    width: 100%; 
     position: relative;
     background-image: url("cap images/4ae96d1a309f3ba0593035487a06b9d6.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 30px;
-    /* Changed: Added flexbox for centering content */
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -196,27 +195,27 @@ body{
 }
 
 .sec1 h2{
-    /* Changed: Made heading responsive and centered */
+    
     font-size: clamp(36px, 5vw, 54px);
     font-weight: 800;
     color: black;
     text-align: center;
     margin-bottom: 30px;
-    position: relative; /* Changed: From absolute */
+    position: relative; 
 }
 
 #search-box{
-    /* Changed: Made search box responsive */
+    
     height: clamp(60px, 8vh, 85px);
     width: 600px;
-    position: relative; /* Changed: From absolute */
+    position: relative; 
     border-radius: 50px;
     border: none;
     padding: 20px;
-    background-color: rgba(27, 31, 66, 0.9); /* Changed: From black with opacity */
+    background-color: rgba(27, 31, 66, 0.9); 
     color: black;
     font-size: clamp(14px, 1.5vw, 16px);
-    transition: all 0.3s ease; /* Added: Smooth transition */
+    transition: all 0.3s ease; 
 }
 
 #search-box::placeholder{
@@ -230,53 +229,52 @@ body{
 #search-box:focus{
     outline: none;
     background-color: white;
-    box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.3); /* Added: Focus indicator */
+    box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.3); 
 }
 
-/* ==================== SECTION 2 - Support Categories ==================== */
+
 .sec2{
-    /* Changed: Made section flexible with auto height */
+    
     min-height: 600px;
-    height: auto; /* Changed: From fixed 1176px */
-    width: 100%; /* Changed: From fixed 1440px */
+    height: auto; 
+    width: 100%; 
     position: relative;
     padding: 60px 0;
     margin-bottom: 20px;
 }
 
 .sec2 h3{
-    /* Changed: Made heading responsive */
+    
     font-size: clamp(28px, 4vw, 40px);
     font-weight: 600;
     color: white;
     margin-bottom: 40px;
-    text-align: left; /* Kept original left alignment */
-    padding-left: 5%; /* Added: Consistent padding */
-    position: relative; /* Changed: From absolute */
+    text-align: left; 
+    padding-left: 5%; 
+    position: relative; 
 }
 
-/* Changed: Created wrapper for grid layout instead of absolute positioning */
-/* .sec2 > div:not(.sec2 h3) {
-    /* This targets all direct children divs except h3 */
+
+
 
 
 .one, .two, .three, .four, .five, .six{
-    /* Changed: Removed absolute positioning, made responsive */
-    height: auto; /* Changed: From fixed 431px */
+    
+    height: auto; 
     min-height: 280px;
     width: 100%;
     max-width: 410px;
     border-radius: 40px;
     background-color: #222222;
-    position: relative; /* Changed: From absolute */
-    padding: 35px 30px; /* Added: Internal padding for content */
-    display: inline-block; /* Changed: To allow grid-like layout */
+    position: relative; 
+    padding: 35px 30px; 
+    display: inline-block; 
     vertical-align: top;
     margin: 10px;
-    transition: all 0.3s ease; /* Added: Smooth hover effect */
+    transition: all 0.3s ease; 
 }
 
-/* Changed: Using flexbox wrapper approach - targeting parent positioning */
+
 .sec2 {
     display: flex;
     flex-wrap: wrap;
@@ -292,19 +290,19 @@ body{
 
 .one:hover, .two:hover, .three:hover, .four:hover, .five:hover, .six:hover{
     background-color: #3c3b3b;
-    transform: translateY(-5px); /* Added: Lift effect on hover */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Added: Shadow on hover */
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); 
 }
 
-/* ==================== SECTION 3 - Contact Support ==================== */
+
 .sec3{
-    /* Changed: Made section responsive */
+    
     min-height: 250px;
-    height: auto; /* Changed: From fixed 302px */
-    width: 100%; /* Changed: From fixed 1440px */
+    height: auto; 
+    width: 100%; 
     background-color: black;
     position: relative;
-    /* Changed: Added flexbox for centering */
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -315,16 +313,16 @@ body{
 }
 
 .sec3 h3{
-    /* Changed: Made heading responsive and centered */
+    
     font-size: clamp(28px, 4vw, 36px);
     font-weight: 600;
     color: white;
     margin-bottom: 30px;
-    position: relative; /* Changed: From absolute */
+    position: relative; 
 }
 
 .request{
-    /* Changed: Made button responsive */
+    
     height: clamp(60px, 8vh, 96px);
     width: auto;
     min-width: 200px;
@@ -335,21 +333,21 @@ body{
     font-weight: bold;
     border: none;
     cursor: pointer;
-    position: relative; /* Changed: From absolute */
-    transition: all 0.3s ease; /* Added: Smooth transition */
+    position: relative; 
+    transition: all 0.3s ease; 
 }
 
 .request:hover{
     background-color: white;
     color: gold;
-    transform: translateY(-2px); /* Added: Lift effect */
-    box-shadow: 0 4px 12px rgba(255, 215, 0, 0.4); /* Added: Shadow */
+    transform: translateY(-2px); 
+    box-shadow: 0 4px 12px rgba(255, 215, 0, 0.4); 
 }
 
-/* ==================== FOOTER - Made Responsive ==================== */
+
 .Footer{
-    min-height: 300px; /* Changed: From fixed 388px */
-    width: 100%; /* Changed: From fixed 1440px */
+    min-height: 300px; 
+    width: 100%; 
     position: relative;
     background-color: black;
     padding: 40px 5%;
@@ -357,11 +355,11 @@ body{
 }
 
 .logo7{
-    /* Changed: Made footer logo responsive */
+    
     height: clamp(70px, 10vw, 111px);
     width: clamp(250px, 35vw, 401px);
-    margin: 0 auto 20px; /* Changed: Added auto margins for centering */
-    position: relative; /* Changed: From absolute */
+    margin: 0 auto 20px; 
+    position: relative; 
     background-color: black;
     background-image: url("cap images/Gemini_Generated_Image_j2ln6qj2ln6qj2ln-removebg-preview.png");
     background-size: cover;
@@ -374,7 +372,7 @@ body{
     font-size: clamp(18px, 2.5vw, 24px);
     margin: 20px 0;
     color: white;
-    position: relative; /* Changed: From absolute */
+    position: relative; 
 }
 
 .sign{
@@ -384,10 +382,10 @@ body{
     margin: 20px auto;
     color: white;
     line-height: 1.5;
-    position: relative; /* Changed: From absolute */
+    position: relative; 
 }
 
-/* Changed: Made social media buttons inline and responsive */
+
 .Footer .facebook,
 .Footer .linkedin,
 .Footer .twitter,
@@ -395,19 +393,19 @@ body{
 .Footer .youtube{
     height: 40px;
     width: 40px;
-    display: inline-block; /* Changed: From absolute positioning */
-    position: relative; /* Changed: From absolute */
+    display: inline-block; 
+    position: relative; 
     margin: 10px 8px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-color: black;
     border: none;
-    transition: transform 0.3s ease; /* Added: Hover effect */
+    transition: transform 0.3s ease; 
 }
 
 .Footer button:hover{
-    transform: scale(1.15); /* Added: Scale on hover */
+    transform: scale(1.15); 
 }
 
 .facebook{
@@ -426,9 +424,9 @@ body{
     background-image: url("cap images/image copy 7.png");
 }
 
-/* Changed: Made h4 and p inside cards responsive */
+
 h4{
-    /* Changed: Removed absolute positioning */
+    
     position: relative;
     color: white;
     font-size: clamp(18px, 2vw, 22px);
@@ -437,26 +435,26 @@ h4{
 }
 
 p{
-    /* Changed: Removed absolute positioning */
+    
     position: relative;
     color: rgba(255, 255, 255, 0.7);
     font-size: clamp(14px, 1.5vw, 18px);
     line-height: 1.6;
-    opacity: 1; /* Changed: Removed double opacity */
+    opacity: 1; 
 }
 
 button:hover{
     cursor: pointer;
 }
 
-/* ==================== MEDIA QUERIES - Tablet Devices ==================== */
+
 @media screen and (max-width: 1024px) {
     body {
         margin-left: 3%;
         margin-right: 3%;
     }
     
-    /* Navbar adjustments for tablets */
+    
     .navbar {
         height: auto;
         padding: 15px 2%;
@@ -468,26 +466,26 @@ button:hover{
         width: 120px;
     }
     
-    /* Adjust card grid for tablets */
+    
     .sec2 {
         gap: 25px;
         padding: 50px 4%;
     }
     
     .one, .two, .three, .four, .five, .six {
-        max-width: calc(50% - 15px); /* 2 columns on tablet */
+        max-width: calc(50% - 15px); 
         margin: 0;
     }
 }
 
-/* ==================== MEDIA QUERIES - Small Tablets ==================== */
+
 @media screen and (max-width: 768px) {
     body {
         margin-left: 2%;
         margin-right: 2%;
     }
     
-    /* Stack navbar items vertically */
+    
     .navbar {
         flex-direction: column;
         align-items: center;
@@ -500,7 +498,7 @@ button:hover{
         margin-bottom: 15px;
     }
     
-    /* Section 1 adjustments */
+    
     .sec1 {
         min-height: 350px;
         padding: 30px 20px;
@@ -516,7 +514,7 @@ button:hover{
         max-width: 500px;
     }
     
-    /* Section 2 - Cards stack on small tablets */
+    
     .sec2 {
         gap: 20px;
         padding: 40px 4%;
@@ -528,24 +526,24 @@ button:hover{
     }
     
     .one, .two, .three, .four, .five, .six {
-        max-width: 100%; /* Single column on small tablets */
+        max-width: 100%; 
         margin: 0 auto;
     }
     
-    /* Section 3 adjustments */
+    
     .sec3 {
         padding: 50px 5%;
     }
 }
 
-/* ==================== MEDIA QUERIES - Mobile Devices ==================== */
+
 @media screen and (max-width: 480px) {
     body {
         margin-left: 0;
         margin-right: 0;
     }
     
-    /* Compact navbar for mobile */
+    
     .navbar {
         padding: 10px;
         gap: 10px;
@@ -566,7 +564,7 @@ button:hover{
         width: 40px;
     }
     
-    /* Section 1 mobile adjustments */
+    
     .sec1 {
         min-height: 320px;
         padding: 25px 15px;
@@ -584,7 +582,7 @@ button:hover{
         padding: 15px;
     }
     
-    /* Section 2 mobile */
+    
     .sec2 {
         padding: 30px 3%;
         gap: 20px;
@@ -610,7 +608,7 @@ button:hover{
         font-size: 14px;
     }
     
-    /* Section 3 mobile */
+    
     .sec3 {
         padding: 40px 4%;
     }
@@ -627,7 +625,7 @@ button:hover{
         padding: 0 30px;
     }
     
-    /* Footer mobile */
+    
     .Footer {
         padding: 30px 5%;
     }
@@ -653,9 +651,9 @@ button:hover{
     }
 }
 
-/* ==================== MEDIA QUERIES - Very Small Devices ==================== */
+
 @media screen and (max-width: 360px) {
-    /* Ultra-compact layout for very small screens */
+    
     .navbar {
         gap: 5px;
     }
@@ -694,9 +692,9 @@ button:hover{
     }
 }
 
-/* ==================== LANDSCAPE MODE ADJUSTMENTS ==================== */
+
 @media screen and (max-height: 600px) and (orientation: landscape) {
-    /* Adjust heights for landscape mode on mobile devices */
+    
     .sec1 {
         min-height: 350px;
     }

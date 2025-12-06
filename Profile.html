@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="./Profile.css">
     
     <style>
-        /* ========== CSS FOR EDITABLE USERNAME ========== */
         .username-edit-mode {
             background-color: #2d2d2d;
             border: 2px solid gold;
@@ -34,14 +33,10 @@
             display: block;
         }
 
-
-        /* ========== CSS FOR SEARCH BOX ========== */
-        
-        /* Container for search box and suggestions */
         #searchContainer {
-            display: none;  /* Hidden by default */
+            display: none;
             position: absolute;
-            top: 110px;  /* Below navbar */
+            top: 110px; 
             left: 50%;
             transform: translateX(-50%);
             width: 90%;
@@ -54,7 +49,7 @@
             box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
         }
         
-        /* Search input field */
+    
         #searchInput {
             width: 100%;
             padding: 15px;
@@ -73,14 +68,12 @@
         #searchInput:focus {
             border-color: gold;
         }
-        
-        /* Container for suggestions */
+    
         #suggestionsBox {
             margin-top: 10px;
-            display: none;  /* Hidden until user types */
+            display: none;
         }
-        
-        /* Individual suggestion items */
+
         .suggestion-item {
             padding: 12px 15px;
             background-color: #2d2d2d;
@@ -97,7 +90,6 @@
             transform: translateX(5px);
         }
         
-        /* Close button */
         #closeSearch {
             position: absolute;
             top: 10px;
@@ -118,7 +110,6 @@
 </head>
 <body>
 
-    <!-- NAVBAR - Exact copy from previous files -->
     <div class="navbar">
         <a href="./PAGE1.HTML"><div class="logo"></div></a>
         <div class="m">
@@ -133,7 +124,6 @@
         </div>
     </div>
 
-    <!-- PROFILE HEADER SECTION -->
     <div class="profile-header">
         <div class="profile-banner"></div>
         <div class="profile-info">
@@ -141,22 +131,17 @@
                 <div class="user-avatar"></div>
             </div>
             <div class="user-details">
-                <!-- CHANGED: Added id to username so we can edit it -->
                 <h1 class="username" id="username">Yashaswi Gusain</h1>
                 <p class="tagline">Explorer of Devbhoomi • Level 42 Adventurer</p>
-                <!-- CHANGED: Added id to button so we can detect clicks -->
                 <button class="edit-profile-btn" id="editBtn">Edit Profile</button>
             </div>
         </div>
     </div>
 
-    <!-- MAIN PROFILE CONTENT -->
     <div class="profile-content">
         
-        <!-- LEFT COLUMN: Account Details & Settings -->
         <div class="profile-left">
             
-            <!-- ACCOUNT DETAILS BOX -->
             <div class="account-details-box">
                 <h2>Account Details</h2>
                 <div class="detail-item">
@@ -172,7 +157,7 @@
                     <span class="detail-value membership-badge">Premium</span>
                 </div>
                 
-                <!-- LINKED PLATFORMS -->
+                
                 <div class="linked-platforms">
                     <h3>Linked Platforms</h3>
                     <div class="platform-icons">
@@ -183,7 +168,7 @@
                 </div>
             </div>
 
-            <!-- SETTINGS SHORTCUTS -->
+            
             <div class="settings-shortcuts">
                 <h2>Quick Settings</h2>
                 <button class="setting-btn">
@@ -205,14 +190,14 @@
             </div>
         </div>
 
-        <!-- RIGHT COLUMN: Game Progress & Achievements -->
+        
         <div class="profile-right">
             
-            <!-- GAME PROGRESS SECTION -->
+            
             <div class="game-progress-section">
                 <h2>Game Progress</h2>
                 
-                <!-- The Source Game Card -->
+                
                 <div class="game-card">
                     <div class="game-card-header">
                         <div class="game-logo source-logo"></div>
@@ -227,7 +212,7 @@
                     <p class="progress-text">68% Complete • 9 of 13 Regions Discovered</p>
                 </div>
 
-                <!-- The Source+ Game Card -->
+                
                 <div class="game-card">
                     <div class="game-card-header">
                         <div class="game-logo source-plus-logo"></div>
@@ -243,18 +228,18 @@
                 </div>
             </div>
 
-            <!-- ACHIEVEMENTS SECTION -->
+            
             <div class="achievements-section">
                 <h2>Recent Achievements</h2>
                 <div class="achievements-grid">
                     
-                    <!-- CHANGED: Added class for JS to target -->
+                    
                     <div class="achievement-card clickable-achievement">
                         <div class="achievement-icon">🏔️</div>
                         <div class="achievement-details">
                             <h4>Peak Climber</h4>
                             <p>Reached the summit of Kedarnath</p>
-                            <!-- NEW: Hidden details -->
+                            
                             <div class="achievement-full-details">
                                 Unlocked: March 15, 2024 • Rare Achievement
                             </div>
@@ -322,7 +307,7 @@
 
     </div>
 
-    <!-- FOOTER - Exact copy from previous files -->
+    
     <div class="Footer">
         <div class="logo7"></div>
         <p class="strong"><strong>Subscribe to the Source Games Email List</strong></p>
@@ -334,7 +319,7 @@
         <button class="youtube"></button>
     </div>
 
-    <!-- ========== SIMPLE DOM MANIPULATION JAVASCRIPT ========== -->
+    
     <script>
         // ========== FEATURE 1: EDIT USERNAME ON BUTTON CLICK ==========
         
